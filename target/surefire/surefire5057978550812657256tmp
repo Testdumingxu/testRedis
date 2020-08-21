@@ -1,7 +1,0 @@
-#surefire
-#Fri Aug 21 13:20:20 CST 2020
-user.dir=C\:\\gome_maven_pro\\test_redis
-maven.repo.local=C\:\\my_java\\maven_repository
-idea.version=2018.3.1
-localRepository=C\:\\my_java\\maven_repository
-basedir=C\:\\gome_maven_pro\\test_redis

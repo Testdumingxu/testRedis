@@ -8,6 +8,7 @@ com\tester\util\ExtentTestNGIReporterListener.class
 com\tester\data\TestStringData.class
 com\tester\testcase\RedisTestHashCases.class
 com\tester\testcase\RedisTestListCases.class
+test2.class
 com\tester\util\ZTestReport$1.class
 com\tester\data\TestSetData.class
 com\tester\testcase\RedisTestSortedSetCases.class

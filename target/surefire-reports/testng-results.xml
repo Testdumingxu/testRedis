@@ -2,67 +2,67 @@
 <testng-results skipped="0" failed="0" ignored="1" total="125" passed="124">
   <reporter-output>
     <line>
-      <![CDATA[统计的key值：testdecr;value值：8]]>
+      <![CDATA[统计的key值：testdecr;value值：7]]>
     </line>
     <line>
-      <![CDATA[实际结果: 8]]>
+      <![CDATA[实际结果: 7]]>
     </line>
     <line>
-      <![CDATA[统计的key值：test_decr;value值：12]]>
+      <![CDATA[统计的key值：test_decr;value值：13]]>
     </line>
     <line>
-      <![CDATA[实际结果: 12]]>
+      <![CDATA[实际结果: 13]]>
     </line>
     <line>
-      <![CDATA[统计的key值：testdecr;value值：8]]>
+      <![CDATA[统计的key值：testdecr;value值：7]]>
     </line>
     <line>
-      <![CDATA[实际结果: 8]]>
+      <![CDATA[实际结果: 7]]>
     </line>
     <line>
-      <![CDATA[统计的key值：test_decr;value值：12]]>
+      <![CDATA[统计的key值：test_decr;value值：13]]>
     </line>
     <line>
-      <![CDATA[实际结果: 12]]>
+      <![CDATA[实际结果: 13]]>
     </line>
     <line>
-      <![CDATA[统计的key值：testdecr;value值：46]]>
+      <![CDATA[统计的key值：testdecr;value值：42]]>
     </line>
     <line>
-      <![CDATA[实际结果: 46]]>
+      <![CDATA[实际结果: 42]]>
     </line>
     <line>
-      <![CDATA[统计的key值：test_decr;value值：-54]]>
+      <![CDATA[统计的key值：test_decr;value值：-58]]>
     </line>
     <line>
-      <![CDATA[实际结果: -54]]>
+      <![CDATA[实际结果: -58]]>
     </line>
     <line>
-      <![CDATA[统计的key值：testdecr;value值：44]]>
+      <![CDATA[统计的key值：testdecr;value值：40]]>
     </line>
     <line>
-      <![CDATA[实际结果: 44]]>
+      <![CDATA[实际结果: 40]]>
     </line>
     <line>
-      <![CDATA[统计的key值：test_decr;value值：-56]]>
+      <![CDATA[统计的key值：test_decr;value值：-60]]>
     </line>
     <line>
-      <![CDATA[实际结果: -56]]>
+      <![CDATA[实际结果: -60]]>
     </line>
     <line>
       <![CDATA[实际结果: updatevalue]]>
     </line>
     <line>
-      <![CDATA[实际结果: 45]]>
+      <![CDATA[实际结果: 41]]>
     </line>
     <line>
-      <![CDATA[实际结果: -55]]>
+      <![CDATA[实际结果: -59]]>
     </line>
     <line>
       <![CDATA[实际结果: 22]]>
     </line>
     <line>
-      <![CDATA[实际结果: 28]]>
+      <![CDATA[实际结果: 32]]>
     </line>
     <line>
       <![CDATA[实际结果: 21.1]]>
@@ -185,16 +185,16 @@
       <![CDATA[预期结果: null|实际结果: null]]>
     </line>
     <line>
-      <![CDATA[|实际结果: 46]]>
+      <![CDATA[|实际结果: 56]]>
     </line>
     <line>
-      <![CDATA[|实际结果: 47]]>
+      <![CDATA[|实际结果: 57]]>
     </line>
     <line>
-      <![CDATA[|实际结果: 49]]>
+      <![CDATA[|实际结果: 59]]>
     </line>
     <line>
-      <![CDATA[|实际结果: 50]]>
+      <![CDATA[|实际结果: 60]]>
     </line>
     <line>
       <![CDATA[|实际结果: 0]]>
@@ -239,10 +239,10 @@
       <![CDATA[实际结果: redis.clients.jedis.ScanResult@6f6745d6]]>
     </line>
     <line>
-      <![CDATA[实际结果: setvalue3]]>
+      <![CDATA[实际结果: setvalue]]>
     </line>
     <line>
-      <![CDATA[实际结果: [setvalue, setvalue2]]]>
+      <![CDATA[实际结果: [setvalue4, setvalue3]]]>
     </line>
     <line>
       <![CDATA[预期结果: 3|实际结果: 3]]>
@@ -404,7 +404,7 @@
       <![CDATA[删除不存在的字段：0]]>
     </line>
   </reporter-output>
-  <suite name="redis的接口测试套件" duration-ms="6360" started-at="2020-08-21T07:01:36Z" finished-at="2020-08-21T07:01:42Z">
+  <suite name="redis的接口测试套件" duration-ms="6178" started-at="2020-08-21T09:36:48Z" finished-at="2020-08-21T09:36:54Z">
     <groups>
       <group name="sortedset">
         <method signature="RedisTestSortedSetCases.Test_ZAdd(java.lang.String, java.util.Map, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZAdd" class="com.tester.testcase.RedisTestSortedSetCases"/>
@@ -490,13 +490,13 @@
         <method signature="RedisTestHashCases.Test_Hvals(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hvals" class="com.tester.testcase.RedisTestHashCases"/>
       </group> <!-- hash -->
     </groups>
-    <test name="redis的全部测试模块" duration-ms="6360" started-at="2020-08-21T07:01:36Z" finished-at="2020-08-21T07:01:42Z">
+    <test name="redis的全部测试模块" duration-ms="6178" started-at="2020-08-21T09:36:48Z" finished-at="2020-08-21T09:36:54Z">
       <class name="com.tester.testcase.RedisTestSortedSetCases">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="beforeClass" is-config="true" duration-ms="183" started-at="2020-08-21T15:01:41Z" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="beforeClass" is-config="true" duration-ms="166" started-at="2020-08-21T17:36:53Z" finished-at="2020-08-21T17:36:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Test_ZAdd(java.lang.String, java.util.Map, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZAdd" duration-ms="7" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回插入后的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZAdd(java.lang.String, java.util.Map, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZAdd" duration-ms="7" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回插入后的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -520,7 +520,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZAdd -->
-        <test-method status="PASS" signature="Test_ZAdd2(java.lang.String, double, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZAdd2" duration-ms="4" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回插入后的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZAdd2(java.lang.String, double, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZAdd2" duration-ms="22" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回插入后的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -549,7 +549,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZAdd2 -->
-        <test-method status="PASS" signature="Test_ZCard(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZCard" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|返回有序集合数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZCard(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZCard" duration-ms="7" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|返回有序集合数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -568,7 +568,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZCard -->
-        <test-method status="PASS" signature="Test_ZCard(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZCard" duration-ms="8" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|返回有序集合数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZCard(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZCard" duration-ms="9" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|返回有序集合数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -587,7 +587,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZCard -->
-        <test-method status="PASS" signature="Test_ZCount(java.lang.String, double, double, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZCount" duration-ms="18" started-at="2020-08-21T15:01:41Z" description="Param:|String key, double min, double max|&lt;/br&gt;Case:|计算2000-5000薪水内的人数|&lt;/br&gt;Return:|返回min-max范围内的成员数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZCount(java.lang.String, double, double, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZCount" duration-ms="7" started-at="2020-08-21T17:36:54Z" description="Param:|String key, double min, double max|&lt;/br&gt;Case:|计算2000-5000薪水内的人数|&lt;/br&gt;Return:|返回min-max范围内的成员数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -616,7 +616,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZCount -->
-        <test-method status="PASS" signature="Test_ZCount(java.lang.String, double, double, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZCount" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String key, double min, double max|&lt;/br&gt;Case:|计算2000-5000薪水内的人数|&lt;/br&gt;Return:|返回min-max范围内的成员数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZCount(java.lang.String, double, double, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZCount" duration-ms="9" started-at="2020-08-21T17:36:54Z" description="Param:|String key, double min, double max|&lt;/br&gt;Case:|计算2000-5000薪水内的人数|&lt;/br&gt;Return:|返回min-max范围内的成员数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -645,7 +645,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZCount -->
-        <test-method status="PASS" signature="Test_ZCount2(java.lang.String, java.lang.String, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZCount2" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String key, String min, String max|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回插入后的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZCount2(java.lang.String, java.lang.String, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZCount2" duration-ms="5" started-at="2020-08-21T17:36:54Z" description="Param:|String key, String min, String max|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回插入后的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -674,7 +674,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZCount2 -->
-        <test-method status="PASS" signature="Test_ZIncrBy(java.lang.String, double, java.lang.String, java.lang.Double)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZIncrBy" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, double var2, String var4|&lt;/br&gt;Case:|为成员member增量2000| 为成员member -50&lt;/br&gt;Return:|返回增量后的新值|返回减量后的新值" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZIncrBy(java.lang.String, double, java.lang.String, java.lang.Double)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZIncrBy" duration-ms="6" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, double var2, String var4|&lt;/br&gt;Case:|为成员member增量2000| 为成员member -50&lt;/br&gt;Return:|返回增量后的新值|返回减量后的新值" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -703,7 +703,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZIncrBy -->
-        <test-method status="PASS" signature="Test_ZRangeByScore(java.lang.String, double, double)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRangeByScore" duration-ms="13" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, double var2, double var4|&lt;/br&gt;Case:|指定区间值|&lt;/br&gt;Return:|返回有序的成员集合|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZRangeByScore(java.lang.String, double, double)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRangeByScore" duration-ms="7" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, double var2, double var4|&lt;/br&gt;Case:|指定区间值|&lt;/br&gt;Return:|返回有序的成员集合|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -727,7 +727,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZRangeByScore -->
-        <test-method status="PASS" signature="Test_ZRem(java.lang.String, java.lang.Long, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRem" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|移除一个成员|移除过个成员|&lt;/br&gt;Return:|返回被成功移除的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZRem(java.lang.String, java.lang.Long, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRem" duration-ms="5" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|移除一个成员|移除过个成员|&lt;/br&gt;Return:|返回被成功移除的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -751,7 +751,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZRem -->
-        <test-method status="PASS" signature="Test_ZRem(java.lang.String, java.lang.Long, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRem" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|移除一个成员|移除过个成员|&lt;/br&gt;Return:|返回被成功移除的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZRem(java.lang.String, java.lang.Long, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRem" duration-ms="7" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|移除一个成员|移除过个成员|&lt;/br&gt;Return:|返回被成功移除的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -775,7 +775,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZRem -->
-        <test-method status="PASS" signature="Test_ZRemByRank(java.lang.String, long, long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRemByRank" duration-ms="5" started-at="2020-08-21T15:01:41Z" description="Param:|String key, long start, long end|&lt;/br&gt;Case:|移除下标范围内的成员|&lt;/br&gt;Return:|返回被移除的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZRemByRank(java.lang.String, long, long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRemByRank" duration-ms="5" started-at="2020-08-21T17:36:54Z" description="Param:|String key, long start, long end|&lt;/br&gt;Case:|移除下标范围内的成员|&lt;/br&gt;Return:|返回被移除的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -799,7 +799,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZRemByRank -->
-        <test-method status="PASS" signature="Test_ZRemRangeByScore(java.lang.String, double, double)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRemRangeByScore" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|移除指定位置内的成员|&lt;/br&gt;Return:|返回被移除的成员数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZRemRangeByScore(java.lang.String, double, double)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRemRangeByScore" duration-ms="10" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|移除指定位置内的成员|&lt;/br&gt;Return:|返回被移除的成员数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -823,7 +823,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZRemRangeByScore -->
-        <test-method status="PASS" signature="Test_ZRevRange(java.lang.String, long, long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRevRange" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, long var2, long var4|&lt;/br&gt;Case:|倒序输出|&lt;/br&gt;Return:|返回成员的结果集|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_ZRevRange(java.lang.String, long, long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRevRange" duration-ms="19" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, long var2, long var4|&lt;/br&gt;Case:|倒序输出|&lt;/br&gt;Return:|返回成员的结果集|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -847,7 +847,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZRevRange -->
-        <test-method status="PASS" signature="Test_ZRevRangeByScore(java.lang.String, double, double)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRevRangeByScore" duration-ms="5" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|倒序输出|&lt;/br&gt;Return:|返回成员的结果集|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_ZRevRangeByScore(java.lang.String, double, double)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRevRangeByScore" duration-ms="8" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|倒序输出|&lt;/br&gt;Return:|返回成员的结果集|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -871,7 +871,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZRevRangeByScore -->
-        <test-method status="PASS" signature="Test_ZRevRank(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRevRank" duration-ms="5" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|对成员进行排名|&lt;/br&gt;Return:|返回某个成员的排名|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_ZRevRank(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZRevRank" duration-ms="7" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|对成员进行排名|&lt;/br&gt;Return:|返回某个成员的排名|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -890,7 +890,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZRevRank -->
-        <test-method status="PASS" signature="Test_ZScan(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZScan" duration-ms="8" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|匹配给定值|&lt;/br&gt;Return:|返回一个有序集合|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_ZScan(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZScan" duration-ms="11" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|匹配给定值|&lt;/br&gt;Return:|返回一个有序集合|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -909,7 +909,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZScan -->
-        <test-method status="PASS" signature="Test_ZScore(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZScore" duration-ms="17" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回插入后的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_ZScore(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="Test_ZScore" duration-ms="5" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回插入后的元素数量|" data-provider="SortedSet_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -928,7 +928,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZScore -->
-        <test-method name="Test_ZRange" signature="Test_ZRange(java.lang.String, long, long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" status="PASS" duration-ms="6" finished-at="2020-08-21T15:01:42Z" started-at="2020-08-21T15:01:42Z" depends-on-methods="com.tester.testcase.RedisTestSortedSetCases.Test_ZAdd" data-provider="SortedSet_all" description="Param:|String var1, long var2, long var4|&lt;/br&gt;Case:|指定区间值|&lt;/br&gt;Return:|返回有序的成员集合|">
+        <test-method name="Test_ZRange" signature="Test_ZRange(java.lang.String, long, long)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" status="PASS" duration-ms="6" finished-at="2020-08-21T17:36:54Z" started-at="2020-08-21T17:36:54Z" depends-on-methods="com.tester.testcase.RedisTestSortedSetCases.Test_ZAdd" data-provider="SortedSet_all" description="Param:|String var1, long var2, long var4|&lt;/br&gt;Case:|指定区间值|&lt;/br&gt;Return:|返回有序的成员集合|">
           <params>
             <param index="0">
               <value>
@@ -952,7 +952,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZRange -->
-        <test-method name="Test_ZRank" signature="Test_ZRank(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" status="PASS" duration-ms="6" finished-at="2020-08-21T15:01:42Z" started-at="2020-08-21T15:01:42Z" depends-on-methods="com.tester.testcase.RedisTestSortedSetCases.Test_ZAdd" data-provider="SortedSet_all" description="Param:|String var1, String var2|&lt;/br&gt;Case:|查看一个member的排名|&lt;/br&gt;Return:|返回score 的排名|">
+        <test-method name="Test_ZRank" signature="Test_ZRank(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" status="PASS" duration-ms="5" finished-at="2020-08-21T17:36:54Z" started-at="2020-08-21T17:36:54Z" depends-on-methods="com.tester.testcase.RedisTestSortedSetCases.Test_ZAdd" data-provider="SortedSet_all" description="Param:|String var1, String var2|&lt;/br&gt;Case:|查看一个member的排名|&lt;/br&gt;Return:|返回score 的排名|">
           <params>
             <param index="0">
               <value>
@@ -971,17 +971,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_ZRank -->
-        <test-method status="PASS" signature="aftersuite()[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="aftersuite" is-config="true" duration-ms="68" started-at="2020-08-21T15:01:42Z" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="aftersuite()[pri:0, instance:com.tester.testcase.RedisTestSortedSetCases@7ca48474]" name="aftersuite" is-config="true" duration-ms="80" started-at="2020-08-21T17:36:54Z" finished-at="2020-08-21T17:36:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftersuite -->
       </class> <!-- com.tester.testcase.RedisTestSortedSetCases -->
       <class name="com.tester.testcase.RedisTestSetCases">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="beforeClass" is-config="true" duration-ms="71" started-at="2020-08-21T15:01:41Z" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="beforeClass" is-config="true" duration-ms="104" started-at="2020-08-21T17:36:53Z" finished-at="2020-08-21T17:36:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Test_Sadd(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Sadd" duration-ms="7" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回 1 或者0|" data-provider="Set_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_Sadd(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Sadd" duration-ms="11" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回 1 或者0|" data-provider="Set_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1000,7 +1000,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Sadd -->
-        <test-method status="PASS" signature="Test_Sadd(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Sadd" duration-ms="5" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回 1 或者0|" data-provider="Set_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_Sadd(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Sadd" duration-ms="7" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|正常将元素插入到集合key中|&lt;/br&gt;Return:|返回 1 或者0|" data-provider="Set_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1019,7 +1019,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Sadd -->
-        <test-method status="PASS" signature="Test_Scard(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Scard" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|返回集合中元素的数量|key不存在时返回 0|" data-provider="Set_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_Scard(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Scard" duration-ms="8" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|返回集合中元素的数量|key不存在时返回 0|" data-provider="Set_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1033,7 +1033,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Scard -->
-        <test-method status="PASS" signature="Test_Scard(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Scard" duration-ms="5" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|返回集合中元素的数量|key不存在时返回 0|" data-provider="Set_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_Scard(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Scard" duration-ms="6" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|返回集合中元素的数量|key不存在时返回 0|" data-provider="Set_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1047,7 +1047,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Scard -->
-        <test-method status="PASS" signature="Test_SisMember(java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_SisMember" duration-ms="9" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|元素存在|元素不存在|&lt;/br&gt;Return:|存在返回true|不存在返回false|" data-provider="Set_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_SisMember(java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_SisMember" duration-ms="10" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|元素存在|元素不存在|&lt;/br&gt;Return:|存在返回true|不存在返回false|" data-provider="Set_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1071,7 +1071,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_SisMember -->
-        <test-method status="PASS" signature="Test_SisMember(java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_SisMember" duration-ms="29" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|元素存在|元素不存在|&lt;/br&gt;Return:|存在返回true|不存在返回false|" data-provider="Set_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_SisMember(java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_SisMember" duration-ms="5" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|元素存在|元素不存在|&lt;/br&gt;Return:|存在返回true|不存在返回false|" data-provider="Set_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1095,7 +1095,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_SisMember -->
-        <test-method status="PASS" signature="Test_Srem(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Srem" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|移除指定的元素|移除多个元素|&lt;/br&gt;Return:|返回被成功移除的元素的数量|" data-provider="Set_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_Srem(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Srem" duration-ms="7" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|移除指定的元素|移除多个元素|&lt;/br&gt;Return:|返回被成功移除的元素的数量|" data-provider="Set_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1114,7 +1114,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Srem -->
-        <test-method status="PASS" signature="Test_Srem(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Srem" duration-ms="4" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|移除指定的元素|移除多个元素|&lt;/br&gt;Return:|返回被成功移除的元素的数量|" data-provider="Set_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_Srem(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="Test_Srem" duration-ms="7" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|移除指定的元素|移除多个元素|&lt;/br&gt;Return:|返回被成功移除的元素的数量|" data-provider="Set_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1133,7 +1133,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Srem -->
-        <test-method name="Test_SrandMember" signature="Test_SrandMember(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" status="PASS" duration-ms="9" finished-at="2020-08-21T15:01:41Z" started-at="2020-08-21T15:01:41Z" depends-on-methods="com.tester.testcase.RedisTestSetCases.Test_Sadd" data-provider="Set_all" description="Param:|String var1, int var2|&lt;/br&gt;Case: |仅提供key参数|&lt;/br&gt;Return:|随机返回一个值|">
+        <test-method name="Test_SrandMember" signature="Test_SrandMember(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" status="PASS" duration-ms="6" finished-at="2020-08-21T17:36:53Z" started-at="2020-08-21T17:36:53Z" depends-on-methods="com.tester.testcase.RedisTestSetCases.Test_Sadd" data-provider="Set_all" description="Param:|String var1, int var2|&lt;/br&gt;Case: |仅提供key参数|&lt;/br&gt;Return:|随机返回一个值|">
           <params>
             <param index="0">
               <value>
@@ -1147,7 +1147,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_SrandMember -->
-        <test-method name="Test_Sscan" signature="Test_Sscan(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" status="PASS" duration-ms="13" finished-at="2020-08-21T15:01:41Z" started-at="2020-08-21T15:01:41Z" depends-on-methods="com.tester.testcase.RedisTestSetCases.Test_Sadd" data-provider="Set_all" description="Param:|String var1, String var2|&lt;/br&gt;Case:|元素存在|元素不存在|&lt;/br&gt;Return:|存在返回true|不存在返回false|">
+        <test-method name="Test_Sscan" signature="Test_Sscan(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" status="PASS" duration-ms="15" finished-at="2020-08-21T17:36:53Z" started-at="2020-08-21T17:36:53Z" depends-on-methods="com.tester.testcase.RedisTestSetCases.Test_Sadd" data-provider="Set_all" description="Param:|String var1, String var2|&lt;/br&gt;Case:|元素存在|元素不存在|&lt;/br&gt;Return:|存在返回true|不存在返回false|">
           <params>
             <param index="0">
               <value>
@@ -1161,7 +1161,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Sscan -->
-        <test-method name="Test_Spop" signature="Test_Spop(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" status="PASS" duration-ms="6" finished-at="2020-08-21T15:01:41Z" started-at="2020-08-21T15:01:41Z" depends-on-methods="com.tester.testcase.RedisTestSetCases.Test_Sadd, com.tester.testcase.RedisTestSetCases.Test_SrandMember" data-provider="Set_all" description="Param:|String|&lt;/br&gt;Case:|随机移除一个元素|&lt;/br&gt;Return:|返回被移除的多个元素|返回nil|">
+        <test-method name="Test_Spop" signature="Test_Spop(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" status="PASS" duration-ms="8" finished-at="2020-08-21T17:36:53Z" started-at="2020-08-21T17:36:53Z" depends-on-methods="com.tester.testcase.RedisTestSetCases.Test_Sadd, com.tester.testcase.RedisTestSetCases.Test_SrandMember" data-provider="Set_all" description="Param:|String|&lt;/br&gt;Case:|随机移除一个元素|&lt;/br&gt;Return:|返回被移除的多个元素|返回nil|">
           <params>
             <param index="0">
               <value>
@@ -1171,11 +1171,11 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[实际结果: setvalue3]]>
+              <![CDATA[实际结果: setvalue]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_Spop -->
-        <test-method name="Test_Spop2" signature="Test_Spop2(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" status="PASS" duration-ms="16" finished-at="2020-08-21T15:01:41Z" started-at="2020-08-21T15:01:41Z" depends-on-methods="com.tester.testcase.RedisTestSetCases.Test_Sadd, com.tester.testcase.RedisTestSetCases.Test_SrandMember" data-provider="Set_all" description="Param:|String var1, long var2|&lt;/br&gt;Case:|随机移除多个元素|集合不存在|&lt;/br&gt;Return:|返回被移除的多个元素|返回nil|">
+        <test-method name="Test_Spop2" signature="Test_Spop2(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" status="PASS" duration-ms="7" finished-at="2020-08-21T17:36:53Z" started-at="2020-08-21T17:36:53Z" depends-on-methods="com.tester.testcase.RedisTestSetCases.Test_Sadd, com.tester.testcase.RedisTestSetCases.Test_SrandMember" data-provider="Set_all" description="Param:|String var1, long var2|&lt;/br&gt;Case:|随机移除多个元素|集合不存在|&lt;/br&gt;Return:|返回被移除的多个元素|返回nil|">
           <params>
             <param index="0">
               <value>
@@ -1190,21 +1190,21 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[实际结果: [setvalue, setvalue2]]]>
+              <![CDATA[实际结果: [setvalue4, setvalue3]]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_Spop2 -->
-        <test-method status="PASS" signature="aftersuite()[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="aftersuite" is-config="true" duration-ms="10" started-at="2020-08-21T15:01:41Z" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="aftersuite()[pri:0, instance:com.tester.testcase.RedisTestSetCases@69d9c55]" name="aftersuite" is-config="true" duration-ms="28" started-at="2020-08-21T17:36:53Z" finished-at="2020-08-21T17:36:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftersuite -->
       </class> <!-- com.tester.testcase.RedisTestSetCases -->
       <class name="com.tester.testcase.RedisTestListCases">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="beforeClass" is-config="true" duration-ms="250" started-at="2020-08-21T15:01:40Z" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="beforeClass" is-config="true" duration-ms="349" started-at="2020-08-21T17:36:52Z" finished-at="2020-08-21T17:36:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Test_BlPop(java.lang.Integer, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_BlPop" duration-ms="32" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|在指定时间内查找弹出的元素|&lt;/br&gt;Return:|在指定时间内查找弹出的元素|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_BlPop(java.lang.Integer, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_BlPop" duration-ms="38" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|在指定时间内查找弹出的元素|&lt;/br&gt;Return:|在指定时间内查找弹出的元素|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1223,7 +1223,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_BlPop -->
-        <test-method status="PASS" signature="Test_BrPop(int, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_BrPop" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|弹出key尾部元素|&lt;/br&gt;Return:|在指定时间内查找弹出的元素|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_BrPop(int, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_BrPop" duration-ms="7" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|弹出key尾部元素|&lt;/br&gt;Return:|在指定时间内查找弹出的元素|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1242,7 +1242,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_BrPop -->
-        <test-method status="PASS" signature="Test_LIndex(java.lang.String, long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LIndex" duration-ms="11" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, long var2|&lt;/br&gt;Case:|下标为0|下标为-1|下标超出区间范围|&lt;/br&gt;Return:|返回下标索引处的值|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LIndex(java.lang.String, long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LIndex" duration-ms="12" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, long var2|&lt;/br&gt;Case:|下标为0|下标为-1|下标超出区间范围|&lt;/br&gt;Return:|返回下标索引处的值|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1266,7 +1266,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LIndex -->
-        <test-method status="PASS" signature="Test_LIndex(java.lang.String, long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LIndex" duration-ms="15" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, long var2|&lt;/br&gt;Case:|下标为0|下标为-1|下标超出区间范围|&lt;/br&gt;Return:|返回下标索引处的值|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LIndex(java.lang.String, long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LIndex" duration-ms="10" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, long var2|&lt;/br&gt;Case:|下标为0|下标为-1|下标超出区间范围|&lt;/br&gt;Return:|返回下标索引处的值|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1290,7 +1290,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LIndex -->
-        <test-method status="PASS" signature="Test_LIndex(java.lang.String, long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LIndex" duration-ms="9" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, long var2|&lt;/br&gt;Case:|下标为0|下标为-1|下标超出区间范围|&lt;/br&gt;Return:|返回下标索引处的值|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LIndex(java.lang.String, long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LIndex" duration-ms="11" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, long var2|&lt;/br&gt;Case:|下标为0|下标为-1|下标超出区间范围|&lt;/br&gt;Return:|返回下标索引处的值|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1312,7 +1312,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LIndex -->
-        <test-method status="PASS" signature="Test_LInsert(java.lang.String, redis.clients.jedis.ListPosition, java.lang.String, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LInsert" duration-ms="7" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, ListPosition var2, String var3, String var4|&lt;/br&gt;Case:|在X值之前插入|在X值之后插入|X值不存在时插入|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LInsert(java.lang.String, redis.clients.jedis.ListPosition, java.lang.String, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LInsert" duration-ms="16" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, ListPosition var2, String var3, String var4|&lt;/br&gt;Case:|在X值之前插入|在X值之后插入|X值不存在时插入|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1346,7 +1346,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LInsert -->
-        <test-method status="PASS" signature="Test_LInsert(java.lang.String, redis.clients.jedis.ListPosition, java.lang.String, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LInsert" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, ListPosition var2, String var3, String var4|&lt;/br&gt;Case:|在X值之前插入|在X值之后插入|X值不存在时插入|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LInsert(java.lang.String, redis.clients.jedis.ListPosition, java.lang.String, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LInsert" duration-ms="11" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, ListPosition var2, String var3, String var4|&lt;/br&gt;Case:|在X值之前插入|在X值之后插入|X值不存在时插入|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1380,7 +1380,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LInsert -->
-        <test-method status="PASS" signature="Test_LInsert(java.lang.String, redis.clients.jedis.ListPosition, java.lang.String, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LInsert" duration-ms="11" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, ListPosition var2, String var3, String var4|&lt;/br&gt;Case:|在X值之前插入|在X值之后插入|X值不存在时插入|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LInsert(java.lang.String, redis.clients.jedis.ListPosition, java.lang.String, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LInsert" duration-ms="6" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, ListPosition var2, String var3, String var4|&lt;/br&gt;Case:|在X值之前插入|在X值之后插入|X值不存在时插入|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1414,7 +1414,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LInsert -->
-        <test-method status="PASS" signature="Test_LInsert(java.lang.String, redis.clients.jedis.ListPosition, java.lang.String, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LInsert" duration-ms="5" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, ListPosition var2, String var3, String var4|&lt;/br&gt;Case:|在X值之前插入|在X值之后插入|X值不存在时插入|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LInsert(java.lang.String, redis.clients.jedis.ListPosition, java.lang.String, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LInsert" duration-ms="5" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, ListPosition var2, String var3, String var4|&lt;/br&gt;Case:|在X值之前插入|在X值之后插入|X值不存在时插入|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1448,7 +1448,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LInsert -->
-        <test-method status="PASS" signature="Test_LPop(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPop" duration-ms="5" started-at="2020-08-21T15:01:41Z" description="Param:|String var1|&lt;/br&gt;Case:|移除一个key的头元素|key不存在|&lt;/br&gt;Return:|成功返回key的头元素|key不存在返回nil|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LPop(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPop" duration-ms="9" started-at="2020-08-21T17:36:53Z" description="Param:|String var1|&lt;/br&gt;Case:|移除一个key的头元素|key不存在|&lt;/br&gt;Return:|成功返回key的头元素|key不存在返回nil|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1467,7 +1467,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LPop -->
-        <test-method status="PASS" signature="Test_LPop(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPop" duration-ms="7" started-at="2020-08-21T15:01:41Z" description="Param:|String var1|&lt;/br&gt;Case:|移除一个key的头元素|key不存在|&lt;/br&gt;Return:|成功返回key的头元素|key不存在返回nil|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LPop(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPop" duration-ms="4" started-at="2020-08-21T17:36:53Z" description="Param:|String var1|&lt;/br&gt;Case:|移除一个key的头元素|key不存在|&lt;/br&gt;Return:|成功返回key的头元素|key不存在返回nil|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1484,7 +1484,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LPop -->
-        <test-method status="PASS" signature="Test_LPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPush" duration-ms="17" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|创建一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPush" duration-ms="5" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|创建一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1503,7 +1503,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LPush -->
-        <test-method status="PASS" signature="Test_LPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPush" duration-ms="5" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|创建一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPush" duration-ms="6" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|创建一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1522,7 +1522,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LPush -->
-        <test-method status="PASS" signature="Test_LPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPush" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|创建一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPush" duration-ms="7" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|创建一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1541,7 +1541,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LPush -->
-        <test-method status="PASS" signature="Test_LPushx(java.lang.String, java.lang.Long, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPushx" duration-ms="7" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|空列表插入值|非空列表插入值|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LPushx(java.lang.String, java.lang.Long, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPushx" duration-ms="7" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|空列表插入值|非空列表插入值|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1565,7 +1565,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LPushx -->
-        <test-method status="PASS" signature="Test_LPushx(java.lang.String, java.lang.Long, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPushx" duration-ms="9" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|空列表插入值|非空列表插入值|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LPushx(java.lang.String, java.lang.Long, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LPushx" duration-ms="6" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|空列表插入值|非空列表插入值|&lt;/br&gt;Return:|插入成功后返回元素数量|插入失败返回0|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1589,7 +1589,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LPushx -->
-        <test-method status="PASS" signature="Test_LRem(java.lang.String, java.lang.Long, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LRem" duration-ms="7" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, long var2, String var4|&lt;/br&gt;Case:|从表头移除count数量的值|从表尾移除count数量的值|count=0移除所有value的值|&lt;/br&gt;Return:|返回被移除元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LRem(java.lang.String, java.lang.Long, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LRem" duration-ms="9" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, long var2, String var4|&lt;/br&gt;Case:|从表头移除count数量的值|从表尾移除count数量的值|count=0移除所有value的值|&lt;/br&gt;Return:|返回被移除元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1618,7 +1618,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LRem -->
-        <test-method status="PASS" signature="Test_LRem(java.lang.String, java.lang.Long, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LRem" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, long var2, String var4|&lt;/br&gt;Case:|从表头移除count数量的值|从表尾移除count数量的值|count=0移除所有value的值|&lt;/br&gt;Return:|返回被移除元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LRem(java.lang.String, java.lang.Long, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LRem" duration-ms="17" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, long var2, String var4|&lt;/br&gt;Case:|从表头移除count数量的值|从表尾移除count数量的值|count=0移除所有value的值|&lt;/br&gt;Return:|返回被移除元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1647,7 +1647,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LRem -->
-        <test-method status="PASS" signature="Test_LRem(java.lang.String, java.lang.Long, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LRem" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, long var2, String var4|&lt;/br&gt;Case:|从表头移除count数量的值|从表尾移除count数量的值|count=0移除所有value的值|&lt;/br&gt;Return:|返回被移除元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LRem(java.lang.String, java.lang.Long, java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LRem" duration-ms="6" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, long var2, String var4|&lt;/br&gt;Case:|从表头移除count数量的值|从表尾移除count数量的值|count=0移除所有value的值|&lt;/br&gt;Return:|返回被移除元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1676,7 +1676,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LRem -->
-        <test-method status="PASS" signature="Test_LSet(java.lang.String, java.lang.Long, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LSet" duration-ms="7" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, long var2, String var4|&lt;/br&gt;Case:|创建一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LSet(java.lang.String, java.lang.Long, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LSet" duration-ms="7" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, long var2, String var4|&lt;/br&gt;Case:|创建一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1705,7 +1705,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LSet -->
-        <test-method status="PASS" signature="Test_LTrim(java.lang.String, long, long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LTrim" duration-ms="9" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, long var2, long var4|&lt;/br&gt;Case:|移除start和end范围之外的元素|&lt;/br&gt;Return:|成功返回OK|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_LTrim(java.lang.String, long, long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_LTrim" duration-ms="6" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, long var2, long var4|&lt;/br&gt;Case:|移除start和end范围之外的元素|&lt;/br&gt;Return:|成功返回OK|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1734,7 +1734,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LTrim -->
-        <test-method status="PASS" signature="Test_RPop(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPop" duration-ms="7" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|弹出末尾元素|key不存在|&lt;/br&gt;Return:|key存在返回被弹出的元素|key不存在返回nil" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_RPop(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPop" duration-ms="9" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|弹出末尾元素|key不存在|&lt;/br&gt;Return:|key存在返回被弹出的元素|key不存在返回nil" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1753,7 +1753,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_RPop -->
-        <test-method status="PASS" signature="Test_RPop(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPop" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|弹出末尾元素|key不存在|&lt;/br&gt;Return:|key存在返回被弹出的元素|key不存在返回nil" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_RPop(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPop" duration-ms="5" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|弹出末尾元素|key不存在|&lt;/br&gt;Return:|key存在返回被弹出的元素|key不存在返回nil" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1770,7 +1770,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_RPop -->
-        <test-method status="PASS" signature="Test_RPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPush" duration-ms="5" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|插入一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_RPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPush" duration-ms="9" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|插入一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1785,11 +1785,11 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[|实际结果: 46]]>
+              <![CDATA[|实际结果: 56]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_RPush -->
-        <test-method status="PASS" signature="Test_RPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPush" duration-ms="5" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|插入一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_RPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPush" duration-ms="5" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|插入一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1804,11 +1804,11 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[|实际结果: 47]]>
+              <![CDATA[|实际结果: 57]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_RPush -->
-        <test-method status="PASS" signature="Test_RPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPush" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|插入一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_RPush(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPush" duration-ms="5" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|插入一个值|插入多个值|插入重复值|&lt;/br&gt;Return:|插入后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1823,11 +1823,11 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[|实际结果: 49]]>
+              <![CDATA[|实际结果: 59]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_RPush -->
-        <test-method status="PASS" signature="Test_RPushx(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPushx" duration-ms="7" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|对存在的key插入值|对不存在的key插入值|&lt;/br&gt;Return:|插入成功后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_RPushx(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPushx" duration-ms="10" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|对存在的key插入值|对不存在的key插入值|&lt;/br&gt;Return:|插入成功后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1842,11 +1842,11 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[|实际结果: 50]]>
+              <![CDATA[|实际结果: 60]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_RPushx -->
-        <test-method status="PASS" signature="Test_RPushx(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPushx" duration-ms="6" started-at="2020-08-21T15:01:41Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|对存在的key插入值|对不存在的key插入值|&lt;/br&gt;Return:|插入成功后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="Test_RPushx(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="Test_RPushx" duration-ms="13" started-at="2020-08-21T17:36:53Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|对存在的key插入值|对不存在的key插入值|&lt;/br&gt;Return:|插入成功后返回元素数量|" data-provider="List_all" finished-at="2020-08-21T17:36:53Z">
           <params>
             <param index="0">
               <value>
@@ -1865,7 +1865,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_RPushx -->
-        <test-method name="Test_LLen" signature="Test_LLen(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" status="PASS" duration-ms="6" finished-at="2020-08-21T15:01:41Z" started-at="2020-08-21T15:01:41Z" depends-on-methods="com.tester.testcase.RedisTestListCases.Test_LPush" data-provider="List_all" description="Param:|String var1|&lt;/br&gt;Case:|列表非空|列表为空|&lt;/br&gt;Return:|列表为空返回0|返回列表元素数量|">
+        <test-method name="Test_LLen" signature="Test_LLen(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" status="PASS" duration-ms="32" finished-at="2020-08-21T17:36:53Z" started-at="2020-08-21T17:36:53Z" depends-on-methods="com.tester.testcase.RedisTestListCases.Test_LPush" data-provider="List_all" description="Param:|String var1|&lt;/br&gt;Case:|列表非空|列表为空|&lt;/br&gt;Return:|列表为空返回0|返回列表元素数量|">
           <params>
             <param index="0">
               <value>
@@ -1884,7 +1884,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LLen -->
-        <test-method name="Test_LLen" signature="Test_LLen(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" status="PASS" duration-ms="4" finished-at="2020-08-21T15:01:41Z" started-at="2020-08-21T15:01:41Z" depends-on-methods="com.tester.testcase.RedisTestListCases.Test_LPush" data-provider="List_all" description="Param:|String var1|&lt;/br&gt;Case:|列表非空|列表为空|&lt;/br&gt;Return:|列表为空返回0|返回列表元素数量|">
+        <test-method name="Test_LLen" signature="Test_LLen(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" status="PASS" duration-ms="7" finished-at="2020-08-21T17:36:53Z" started-at="2020-08-21T17:36:53Z" depends-on-methods="com.tester.testcase.RedisTestListCases.Test_LPush" data-provider="List_all" description="Param:|String var1|&lt;/br&gt;Case:|列表非空|列表为空|&lt;/br&gt;Return:|列表为空返回0|返回列表元素数量|">
           <params>
             <param index="0">
               <value>
@@ -1903,7 +1903,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LLen -->
-        <test-method name="Test_LRange" signature="Test_LRange(java.lang.String, long, long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" status="PASS" duration-ms="6" finished-at="2020-08-21T15:01:41Z" started-at="2020-08-21T15:01:41Z" depends-on-methods="com.tester.testcase.RedisTestListCases.Test_LPush" data-provider="List_all" description="Param:|String var1, long var2, long var4|&lt;/br&gt;Case:|start起始位置，end结束位置|&lt;/br&gt;Return:|返回给定位置的元素|">
+        <test-method name="Test_LRange" signature="Test_LRange(java.lang.String, long, long)[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" status="PASS" duration-ms="8" finished-at="2020-08-21T17:36:53Z" started-at="2020-08-21T17:36:53Z" depends-on-methods="com.tester.testcase.RedisTestListCases.Test_LPush" data-provider="List_all" description="Param:|String var1, long var2, long var4|&lt;/br&gt;Case:|start起始位置，end结束位置|&lt;/br&gt;Return:|返回给定位置的元素|">
           <params>
             <param index="0">
               <value>
@@ -1927,17 +1927,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_LRange -->
-        <test-method status="PASS" signature="aftersuite()[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="aftersuite" is-config="true" duration-ms="49" started-at="2020-08-21T15:01:41Z" finished-at="2020-08-21T15:01:41Z">
+        <test-method status="PASS" signature="aftersuite()[pri:0, instance:com.tester.testcase.RedisTestListCases@153f5a29]" name="aftersuite" is-config="true" duration-ms="52" started-at="2020-08-21T17:36:53Z" finished-at="2020-08-21T17:36:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftersuite -->
       </class> <!-- com.tester.testcase.RedisTestListCases -->
       <class name="com.tester.testcase.RedisTestHashCases">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="beforeClass" is-config="true" duration-ms="80" started-at="2020-08-21T15:01:42Z" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="beforeClass" is-config="true" duration-ms="122" started-at="2020-08-21T17:36:54Z" finished-at="2020-08-21T17:36:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Test_Hexists(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hexists" duration-ms="6" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|字段存在|key不存在|字段不存在|&lt;/br&gt;Return:|存在返回true|key不存在返回false|字段不存在返回false|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hexists(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hexists" duration-ms="11" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|字段存在|key不存在|字段不存在|&lt;/br&gt;Return:|存在返回true|key不存在返回false|字段不存在返回false|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -1956,7 +1956,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hexists -->
-        <test-method status="PASS" signature="Test_Hexists(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hexists" duration-ms="5" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|字段存在|key不存在|字段不存在|&lt;/br&gt;Return:|存在返回true|key不存在返回false|字段不存在返回false|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hexists(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hexists" duration-ms="7" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|字段存在|key不存在|字段不存在|&lt;/br&gt;Return:|存在返回true|key不存在返回false|字段不存在返回false|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -1975,7 +1975,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hexists -->
-        <test-method status="PASS" signature="Test_Hexists(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hexists" duration-ms="5" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|字段存在|key不存在|字段不存在|&lt;/br&gt;Return:|存在返回true|key不存在返回false|字段不存在返回false|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hexists(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hexists" duration-ms="12" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2|&lt;/br&gt;Case:|字段存在|key不存在|字段不存在|&lt;/br&gt;Return:|存在返回true|key不存在返回false|字段不存在返回false|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -1994,7 +1994,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hexists -->
-        <test-method status="PASS" signature="Test_HgetAll(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HgetAll" duration-ms="5" started-at="2020-08-21T15:01:42Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|存在返回所有字段及字段值|不存在返回空列表|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_HgetAll(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HgetAll" duration-ms="36" started-at="2020-08-21T17:36:54Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|存在返回所有字段及字段值|不存在返回空列表|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2008,7 +2008,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_HgetAll -->
-        <test-method status="PASS" signature="Test_HgetAll(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HgetAll" duration-ms="4" started-at="2020-08-21T15:01:42Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|存在返回所有字段及字段值|不存在返回空列表|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_HgetAll(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HgetAll" duration-ms="8" started-at="2020-08-21T17:36:54Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在|&lt;/br&gt;Return:|存在返回所有字段及字段值|不存在返回空列表|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2022,7 +2022,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_HgetAll -->
-        <test-method status="PASS" signature="Test_HincrBy(java.lang.String, java.lang.String, java.lang.Long, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HincrBy" duration-ms="20" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|increment为正数200|increment为负数50|&lt;/br&gt;Return:|创建相加后的值|返回减去50后的值|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_HincrBy(java.lang.String, java.lang.String, java.lang.Long, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HincrBy" duration-ms="8" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|increment为正数200|increment为负数50|&lt;/br&gt;Return:|创建相加后的值|返回减去50后的值|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2051,7 +2051,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_HincrBy -->
-        <test-method status="PASS" signature="Test_HincrBy(java.lang.String, java.lang.String, java.lang.Long, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HincrBy" duration-ms="8" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|increment为正数200|increment为负数50|&lt;/br&gt;Return:|创建相加后的值|返回减去50后的值|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_HincrBy(java.lang.String, java.lang.String, java.lang.Long, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HincrBy" duration-ms="6" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|increment为正数200|increment为负数50|&lt;/br&gt;Return:|创建相加后的值|返回减去50后的值|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2080,7 +2080,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_HincrBy -->
-        <test-method status="PASS" signature="Test_HincrByFloat(java.lang.String, java.lang.String, java.lang.Double, java.lang.Double)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HincrByFloat" duration-ms="6" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|传入小数|传入指数符号|key不存在|key存在字段不存在|&lt;/br&gt;Return:|返回相加后的值|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_HincrByFloat(java.lang.String, java.lang.String, java.lang.Double, java.lang.Double)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HincrByFloat" duration-ms="7" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|传入小数|传入指数符号|key不存在|key存在字段不存在|&lt;/br&gt;Return:|返回相加后的值|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2109,7 +2109,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_HincrByFloat -->
-        <test-method status="PASS" signature="Test_HincrByFloat(java.lang.String, java.lang.String, java.lang.Double, java.lang.Double)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HincrByFloat" duration-ms="3" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|传入小数|传入指数符号|key不存在|key存在字段不存在|&lt;/br&gt;Return:|返回相加后的值|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_HincrByFloat(java.lang.String, java.lang.String, java.lang.Double, java.lang.Double)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_HincrByFloat" duration-ms="10" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|传入小数|传入指数符号|key不存在|key存在字段不存在|&lt;/br&gt;Return:|返回相加后的值|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2138,7 +2138,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_HincrByFloat -->
-        <test-method status="PASS" signature="Test_Hkeys(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hkeys" duration-ms="13" started-at="2020-08-21T15:01:42Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在&lt;/br&gt;Return:|返回所有字段|返回nil|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hkeys(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hkeys" duration-ms="8" started-at="2020-08-21T17:36:54Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在&lt;/br&gt;Return:|返回所有字段|返回nil|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2152,7 +2152,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hkeys -->
-        <test-method status="PASS" signature="Test_Hkeys(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hkeys" duration-ms="5" started-at="2020-08-21T15:01:42Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在&lt;/br&gt;Return:|返回所有字段|返回nil|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hkeys(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hkeys" duration-ms="8" started-at="2020-08-21T17:36:54Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在&lt;/br&gt;Return:|返回所有字段|返回nil|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2166,7 +2166,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hkeys -->
-        <test-method status="PASS" signature="Test_Hmget(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hmget" duration-ms="5" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|在key中给定一个存在的字段|在key给定一个不存在的字段|&lt;/br&gt;Return:|创建返回key中的一个字段值|字段不存在返回nil|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hmget(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hmget" duration-ms="5" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|在key中给定一个存在的字段|在key给定一个不存在的字段|&lt;/br&gt;Return:|创建返回key中的一个字段值|字段不存在返回nil|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2185,7 +2185,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hmget -->
-        <test-method status="PASS" signature="Test_Hmget(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hmget" duration-ms="5" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|在key中给定一个存在的字段|在key给定一个不存在的字段|&lt;/br&gt;Return:|创建返回key中的一个字段值|字段不存在返回nil|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hmget(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hmget" duration-ms="13" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|在key中给定一个存在的字段|在key给定一个不存在的字段|&lt;/br&gt;Return:|创建返回key中的一个字段值|字段不存在返回nil|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2204,7 +2204,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hmget -->
-        <test-method status="PASS" signature="Test_Hmget(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hmget" duration-ms="4" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|在key中给定一个存在的字段|在key给定一个不存在的字段|&lt;/br&gt;Return:|创建返回key中的一个字段值|字段不存在返回nil|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hmget(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hmget" duration-ms="5" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|在key中给定一个存在的字段|在key给定一个不存在的字段|&lt;/br&gt;Return:|创建返回key中的一个字段值|字段不存在返回nil|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2223,7 +2223,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hmget -->
-        <test-method status="PASS" signature="Test_Hmset(java.lang.String, java.util.Map, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hmset" duration-ms="4" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|插入多个字段|重复插入字段&lt;/br&gt;Return:|创建返回 OK| 返回OK将替换旧值|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hmset(java.lang.String, java.util.Map, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hmset" duration-ms="6" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|插入多个字段|重复插入字段&lt;/br&gt;Return:|创建返回 OK| 返回OK将替换旧值|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2247,7 +2247,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hmset -->
-        <test-method status="PASS" signature="Test_Hmset(java.lang.String, java.util.Map, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hmset" duration-ms="4" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|插入多个字段|重复插入字段&lt;/br&gt;Return:|创建返回 OK| 返回OK将替换旧值|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hmset(java.lang.String, java.util.Map, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hmset" duration-ms="6" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|插入多个字段|重复插入字段&lt;/br&gt;Return:|创建返回 OK| 返回OK将替换旧值|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2271,7 +2271,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hmset -->
-        <test-method status="PASS" signature="Test_Hset(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset" duration-ms="8" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, String var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hset(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset" duration-ms="5" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, String var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2295,7 +2295,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hset -->
-        <test-method status="PASS" signature="Test_Hset(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset" duration-ms="3" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, String var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hset(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset" duration-ms="5" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, String var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2319,7 +2319,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hset -->
-        <test-method status="PASS" signature="Test_Hset(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset" duration-ms="4" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, String var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hset(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset" duration-ms="6" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, String var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2343,7 +2343,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hset -->
-        <test-method status="PASS" signature="Test_Hset(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset" duration-ms="19" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, String var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hset(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset" duration-ms="4" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, String var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2367,7 +2367,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hset -->
-        <test-method status="PASS" signature="Test_Hset2(java.lang.String, java.lang.String, [B)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset2" duration-ms="5" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hset2(java.lang.String, java.lang.String, [B)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset2" duration-ms="6" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2391,7 +2391,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hset2 -->
-        <test-method status="PASS" signature="Test_Hset2(java.lang.String, java.lang.String, [B)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset2" duration-ms="6" started-at="2020-08-21T15:01:42Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hset2(java.lang.String, java.lang.String, [B)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hset2" duration-ms="5" started-at="2020-08-21T17:36:54Z" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|创建一个哈希表|覆盖哈希表中的旧值&lt;/br&gt;Return:|创建返回 1 覆盖返回0|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2415,7 +2415,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hset2 -->
-        <test-method status="PASS" signature="Test_Hvals(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hvals" duration-ms="5" started-at="2020-08-21T15:01:42Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在&lt;/br&gt;Return:|返回所有数据|返回nil|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hvals(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hvals" duration-ms="5" started-at="2020-08-21T17:36:54Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在&lt;/br&gt;Return:|返回所有数据|返回nil|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2429,7 +2429,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hvals -->
-        <test-method status="PASS" signature="Test_Hvals(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hvals" duration-ms="4" started-at="2020-08-21T15:01:42Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在&lt;/br&gt;Return:|返回所有数据|返回nil|" data-provider="Hash_all" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="Test_Hvals(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="Test_Hvals" duration-ms="5" started-at="2020-08-21T17:36:54Z" description="Param:|String var1|&lt;/br&gt;Case:|key存在|key不存在&lt;/br&gt;Return:|返回所有数据|返回nil|" data-provider="Hash_all" finished-at="2020-08-21T17:36:54Z">
           <params>
             <param index="0">
               <value>
@@ -2443,7 +2443,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hvals -->
-        <test-method name="Test_Hget" signature="Test_Hget(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="17" finished-at="2020-08-21T15:01:42Z" started-at="2020-08-21T15:01:42Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|获取指定字段的值|指定字段不存在|key不存在|&lt;/br&gt;Return:|存在返回字段值|不存在返回nil|返回nil|">
+        <test-method name="Test_Hget" signature="Test_Hget(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="6" finished-at="2020-08-21T17:36:54Z" started-at="2020-08-21T17:36:54Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|获取指定字段的值|指定字段不存在|key不存在|&lt;/br&gt;Return:|存在返回字段值|不存在返回nil|返回nil|">
           <params>
             <param index="0">
               <value>
@@ -2467,7 +2467,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hget -->
-        <test-method name="Test_Hget" signature="Test_Hget(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="4" finished-at="2020-08-21T15:01:42Z" started-at="2020-08-21T15:01:42Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|获取指定字段的值|指定字段不存在|key不存在|&lt;/br&gt;Return:|存在返回字段值|不存在返回nil|返回nil|">
+        <test-method name="Test_Hget" signature="Test_Hget(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="3" finished-at="2020-08-21T17:36:54Z" started-at="2020-08-21T17:36:54Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|获取指定字段的值|指定字段不存在|key不存在|&lt;/br&gt;Return:|存在返回字段值|不存在返回nil|返回nil|">
           <params>
             <param index="0">
               <value>
@@ -2489,7 +2489,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hget -->
-        <test-method name="Test_Hget" signature="Test_Hget(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="4" finished-at="2020-08-21T15:01:42Z" started-at="2020-08-21T15:01:42Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|获取指定字段的值|指定字段不存在|key不存在|&lt;/br&gt;Return:|存在返回字段值|不存在返回nil|返回nil|">
+        <test-method name="Test_Hget" signature="Test_Hget(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="5" finished-at="2020-08-21T17:36:54Z" started-at="2020-08-21T17:36:54Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|获取指定字段的值|指定字段不存在|key不存在|&lt;/br&gt;Return:|存在返回字段值|不存在返回nil|返回nil|">
           <params>
             <param index="0">
               <value>
@@ -2511,7 +2511,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hget -->
-        <test-method name="Test_Hlen" signature="Test_Hlen(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="6" finished-at="2020-08-21T15:01:42Z" started-at="2020-08-21T15:01:42Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1|&lt;/br&gt;Case:|正确返回字段的数量|key不存在&lt;/br&gt;Return:|返回哈希表key中字段的数量|返回0|">
+        <test-method name="Test_Hlen" signature="Test_Hlen(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="5" finished-at="2020-08-21T17:36:54Z" started-at="2020-08-21T17:36:54Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1|&lt;/br&gt;Case:|正确返回字段的数量|key不存在&lt;/br&gt;Return:|返回哈希表key中字段的数量|返回0|">
           <params>
             <param index="0">
               <value>
@@ -2530,7 +2530,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hlen -->
-        <test-method name="Test_Hlen" signature="Test_Hlen(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="3" finished-at="2020-08-21T15:01:42Z" started-at="2020-08-21T15:01:42Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1|&lt;/br&gt;Case:|正确返回字段的数量|key不存在&lt;/br&gt;Return:|返回哈希表key中字段的数量|返回0|">
+        <test-method name="Test_Hlen" signature="Test_Hlen(java.lang.String, java.lang.Long)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="4" finished-at="2020-08-21T17:36:54Z" started-at="2020-08-21T17:36:54Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1|&lt;/br&gt;Case:|正确返回字段的数量|key不存在&lt;/br&gt;Return:|返回哈希表key中字段的数量|返回0|">
           <params>
             <param index="0">
               <value>
@@ -2549,7 +2549,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hlen -->
-        <test-method name="Test_Hscan" signature="Test_Hscan(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="52" finished-at="2020-08-21T15:01:42Z" started-at="2020-08-21T15:01:42Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|获取所有元素数量|&lt;/br&gt;Return:|返回所有元素|">
+        <test-method name="Test_Hscan" signature="Test_Hscan(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="17" finished-at="2020-08-21T17:36:54Z" started-at="2020-08-21T17:36:54Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset" data-provider="Hash_all" description="Param:|String var1, String var2, byte[] var3|&lt;/br&gt;Case:|获取所有元素数量|&lt;/br&gt;Return:|返回所有元素|">
           <params>
             <param index="0">
               <value>
@@ -2568,7 +2568,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hscan -->
-        <test-method name="Test_Hdel" signature="Test_Hdel(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="8" finished-at="2020-08-21T15:01:42Z" started-at="2020-08-21T15:01:42Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset, com.tester.testcase.RedisTestHashCases.Test_Hexists, com.tester.testcase.RedisTestHashCases.Test_Hget" data-provider="Hash_all" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|删除一个字段|删除2个字段|删除不存在的字段|&lt;/br&gt;Return:|返回1|返回2|返回0|">
+        <test-method name="Test_Hdel" signature="Test_Hdel(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="10" finished-at="2020-08-21T17:36:54Z" started-at="2020-08-21T17:36:54Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset, com.tester.testcase.RedisTestHashCases.Test_Hexists, com.tester.testcase.RedisTestHashCases.Test_Hget" data-provider="Hash_all" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|删除一个字段|删除2个字段|删除不存在的字段|&lt;/br&gt;Return:|返回1|返回2|返回0|">
           <params>
             <param index="0">
               <value>
@@ -2587,7 +2587,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hdel -->
-        <test-method name="Test_Hdel" signature="Test_Hdel(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="5" finished-at="2020-08-21T15:01:42Z" started-at="2020-08-21T15:01:42Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset, com.tester.testcase.RedisTestHashCases.Test_Hexists, com.tester.testcase.RedisTestHashCases.Test_Hget" data-provider="Hash_all" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|删除一个字段|删除2个字段|删除不存在的字段|&lt;/br&gt;Return:|返回1|返回2|返回0|">
+        <test-method name="Test_Hdel" signature="Test_Hdel(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="3" finished-at="2020-08-21T17:36:54Z" started-at="2020-08-21T17:36:54Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset, com.tester.testcase.RedisTestHashCases.Test_Hexists, com.tester.testcase.RedisTestHashCases.Test_Hget" data-provider="Hash_all" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|删除一个字段|删除2个字段|删除不存在的字段|&lt;/br&gt;Return:|返回1|返回2|返回0|">
           <params>
             <param index="0">
               <value>
@@ -2606,7 +2606,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hdel -->
-        <test-method name="Test_Hdel" signature="Test_Hdel(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="12" finished-at="2020-08-21T15:01:42Z" started-at="2020-08-21T15:01:42Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset, com.tester.testcase.RedisTestHashCases.Test_Hexists, com.tester.testcase.RedisTestHashCases.Test_Hget" data-provider="Hash_all" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|删除一个字段|删除2个字段|删除不存在的字段|&lt;/br&gt;Return:|返回1|返回2|返回0|">
+        <test-method name="Test_Hdel" signature="Test_Hdel(java.lang.String, [Ljava.lang.String;)[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" status="PASS" duration-ms="9" finished-at="2020-08-21T17:36:54Z" started-at="2020-08-21T17:36:54Z" depends-on-methods="com.tester.testcase.RedisTestHashCases.Test_Hset, com.tester.testcase.RedisTestHashCases.Test_Hexists, com.tester.testcase.RedisTestHashCases.Test_Hget" data-provider="Hash_all" description="Param:|String var1, String... var2|&lt;/br&gt;Case:|删除一个字段|删除2个字段|删除不存在的字段|&lt;/br&gt;Return:|返回1|返回2|返回0|">
           <params>
             <param index="0">
               <value>
@@ -2625,17 +2625,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Hdel -->
-        <test-method status="PASS" signature="aftersuite()[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="aftersuite" is-config="true" duration-ms="32" started-at="2020-08-21T15:01:42Z" finished-at="2020-08-21T15:01:42Z">
+        <test-method status="PASS" signature="aftersuite()[pri:0, instance:com.tester.testcase.RedisTestHashCases@59e84876]" name="aftersuite" is-config="true" duration-ms="33" started-at="2020-08-21T17:36:54Z" finished-at="2020-08-21T17:36:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftersuite -->
       </class> <!-- com.tester.testcase.RedisTestHashCases -->
       <class name="com.tester.testcase.RedisTestStringCases">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="beforeClass" is-config="true" duration-ms="3178" started-at="2020-08-21T15:01:36Z" finished-at="2020-08-21T15:01:39Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="beforeClass" is-config="true" duration-ms="3877" started-at="2020-08-21T17:36:48Z" finished-at="2020-08-21T17:36:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Test_BitCount(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_BitCount" duration-ms="268" started-at="2020-08-21T15:01:39Z" description="Param:String var1;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量" data-provider="String_all" finished-at="2020-08-21T15:01:39Z">
+        <test-method status="PASS" signature="Test_BitCount(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_BitCount" duration-ms="108" started-at="2020-08-21T17:36:52Z" description="Param:String var1;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2645,14 +2645,14 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[统计的key值：testdecr;value值：8]]>
+              <![CDATA[统计的key值：testdecr;value值：7]]>
             </line>
             <line>
-              <![CDATA[实际结果: 8]]>
+              <![CDATA[实际结果: 7]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_BitCount -->
-        <test-method status="PASS" signature="Test_BitCount(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_BitCount" duration-ms="12" started-at="2020-08-21T15:01:39Z" description="Param:String var1;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量" data-provider="String_all" finished-at="2020-08-21T15:01:39Z">
+        <test-method status="PASS" signature="Test_BitCount(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_BitCount" duration-ms="10" started-at="2020-08-21T17:36:52Z" description="Param:String var1;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2662,14 +2662,14 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[统计的key值：test_decr;value值：12]]>
+              <![CDATA[统计的key值：test_decr;value值：13]]>
             </line>
             <line>
-              <![CDATA[实际结果: 12]]>
+              <![CDATA[实际结果: 13]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_BitCount -->
-        <test-method status="PASS" signature="Test_BitCount2(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_BitCount2" duration-ms="4" started-at="2020-08-21T15:01:39Z" description="Param:String var1 long var2, long var4;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量" data-provider="String_all" finished-at="2020-08-21T15:01:39Z">
+        <test-method status="PASS" signature="Test_BitCount2(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_BitCount2" duration-ms="18" started-at="2020-08-21T17:36:52Z" description="Param:String var1 long var2, long var4;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2679,14 +2679,14 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[统计的key值：testdecr;value值：8]]>
+              <![CDATA[统计的key值：testdecr;value值：7]]>
             </line>
             <line>
-              <![CDATA[实际结果: 8]]>
+              <![CDATA[实际结果: 7]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_BitCount2 -->
-        <test-method status="PASS" signature="Test_BitCount2(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_BitCount2" duration-ms="4" started-at="2020-08-21T15:01:39Z" description="Param:String var1 long var2, long var4;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量" data-provider="String_all" finished-at="2020-08-21T15:01:39Z">
+        <test-method status="PASS" signature="Test_BitCount2(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_BitCount2" duration-ms="7" started-at="2020-08-21T17:36:52Z" description="Param:String var1 long var2, long var4;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2696,14 +2696,14 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[统计的key值：test_decr;value值：12]]>
+              <![CDATA[统计的key值：test_decr;value值：13]]>
             </line>
             <line>
-              <![CDATA[实际结果: 12]]>
+              <![CDATA[实际结果: 13]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_BitCount2 -->
-        <test-method status="PASS" signature="Test_Decr(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Decr" duration-ms="136" started-at="2020-08-21T15:01:39Z" description="Param:String var1;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常" data-provider="String_all" finished-at="2020-08-21T15:01:39Z">
+        <test-method status="PASS" signature="Test_Decr(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Decr" duration-ms="8" started-at="2020-08-21T17:36:52Z" description="Param:String var1;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2713,14 +2713,14 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[统计的key值：testdecr;value值：46]]>
+              <![CDATA[统计的key值：testdecr;value值：42]]>
             </line>
             <line>
-              <![CDATA[实际结果: 46]]>
+              <![CDATA[实际结果: 42]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_Decr -->
-        <test-method status="PASS" signature="Test_Decr(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Decr" duration-ms="5" started-at="2020-08-21T15:01:39Z" description="Param:String var1;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常" data-provider="String_all" finished-at="2020-08-21T15:01:39Z">
+        <test-method status="PASS" signature="Test_Decr(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Decr" duration-ms="3" started-at="2020-08-21T17:36:52Z" description="Param:String var1;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2730,14 +2730,14 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[统计的key值：test_decr;value值：-54]]>
+              <![CDATA[统计的key值：test_decr;value值：-58]]>
             </line>
             <line>
-              <![CDATA[实际结果: -54]]>
+              <![CDATA[实际结果: -58]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_Decr -->
-        <test-method status="PASS" signature="Test_DecrBy(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_DecrBy" duration-ms="26" started-at="2020-08-21T15:01:39Z" description="Param:String var1 long var2;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常" data-provider="String_all" finished-at="2020-08-21T15:01:39Z">
+        <test-method status="PASS" signature="Test_DecrBy(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_DecrBy" duration-ms="5" started-at="2020-08-21T17:36:52Z" description="Param:String var1 long var2;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2747,14 +2747,14 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[统计的key值：testdecr;value值：44]]>
+              <![CDATA[统计的key值：testdecr;value值：40]]>
             </line>
             <line>
-              <![CDATA[实际结果: 44]]>
+              <![CDATA[实际结果: 40]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_DecrBy -->
-        <test-method status="PASS" signature="Test_DecrBy(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_DecrBy" duration-ms="121" started-at="2020-08-21T15:01:39Z" description="Param:String var1 long var2;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常" data-provider="String_all" finished-at="2020-08-21T15:01:39Z">
+        <test-method status="PASS" signature="Test_DecrBy(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_DecrBy" duration-ms="7" started-at="2020-08-21T17:36:52Z" description="Param:String var1 long var2;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2764,14 +2764,14 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[统计的key值：test_decr;value值：-56]]>
+              <![CDATA[统计的key值：test_decr;value值：-60]]>
             </line>
             <line>
-              <![CDATA[实际结果: -56]]>
+              <![CDATA[实际结果: -60]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_DecrBy -->
-        <test-method status="PASS" signature="Test_GetSet(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_GetSet" duration-ms="11" started-at="2020-08-21T15:01:39Z" description="String var1, String var2;Case:设置value值返回旧的值;Return: 返回给定 key 的旧值" data-provider="String_all" finished-at="2020-08-21T15:01:39Z">
+        <test-method status="PASS" signature="Test_GetSet(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_GetSet" duration-ms="6" started-at="2020-08-21T17:36:52Z" description="String var1, String var2;Case:设置value值返回旧的值;Return: 返回给定 key 的旧值" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2790,7 +2790,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_GetSet -->
-        <test-method status="PASS" signature="Test_Incr(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Incr" duration-ms="24" started-at="2020-08-21T15:01:39Z" description="String var1;Case:key中储存的数字值增一;Return: 返回+1后的值" data-provider="String_all" finished-at="2020-08-21T15:01:39Z">
+        <test-method status="PASS" signature="Test_Incr(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Incr" duration-ms="4" started-at="2020-08-21T17:36:52Z" description="String var1;Case:key中储存的数字值增一;Return: 返回+1后的值" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2800,11 +2800,11 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[实际结果: 45]]>
+              <![CDATA[实际结果: 41]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_Incr -->
-        <test-method status="PASS" signature="Test_Incr(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Incr" duration-ms="133" started-at="2020-08-21T15:01:39Z" description="String var1;Case:key中储存的数字值增一;Return: 返回+1后的值" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_Incr(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Incr" duration-ms="6" started-at="2020-08-21T17:36:52Z" description="String var1;Case:key中储存的数字值增一;Return: 返回+1后的值" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2814,11 +2814,11 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[实际结果: -55]]>
+              <![CDATA[实际结果: -59]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_Incr -->
-        <test-method status="PASS" signature="Test_IncrBy(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_IncrBy" duration-ms="20" started-at="2020-08-21T15:01:40Z" description="String var1, long var2;Case:将 key 所储存的值+2;Return: 返回相加后的值" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_IncrBy(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_IncrBy" duration-ms="15" started-at="2020-08-21T17:36:52Z" description="String var1, long var2;Case:将 key 所储存的值+2;Return: 返回相加后的值" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2832,7 +2832,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_IncrBy -->
-        <test-method status="PASS" signature="Test_IncrBy(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_IncrBy" duration-ms="150" started-at="2020-08-21T15:01:40Z" description="String var1, long var2;Case:将 key 所储存的值+2;Return: 返回相加后的值" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_IncrBy(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_IncrBy" duration-ms="47" started-at="2020-08-21T17:36:52Z" description="String var1, long var2;Case:将 key 所储存的值+2;Return: 返回相加后的值" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2842,11 +2842,11 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[实际结果: 28]]>
+              <![CDATA[实际结果: 32]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test_IncrBy -->
-        <test-method status="PASS" signature="Test_IncrByFloat(java.lang.String, double)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_IncrByFloat" duration-ms="11" started-at="2020-08-21T15:01:40Z" description="String var1, double var2;Case:将 key 所储存的值+1.1;Return: 返回给定 key 的旧值" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_IncrByFloat(java.lang.String, double)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_IncrByFloat" duration-ms="6" started-at="2020-08-21T17:36:52Z" description="String var1, double var2;Case:将 key 所储存的值+1.1;Return: 返回给定 key 的旧值" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2865,7 +2865,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_IncrByFloat -->
-        <test-method status="PASS" signature="Test_Psetex(java.lang.String, java.lang.Long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Psetex" duration-ms="126" started-at="2020-08-21T15:01:40Z" description="String var1, long var2, String var4;Case:设置key值1000ms;Return: 返回OK" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_Psetex(java.lang.String, java.lang.Long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Psetex" duration-ms="7" started-at="2020-08-21T17:36:52Z" description="String var1, long var2, String var4;Case:设置key值1000ms;Return: 返回OK" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2889,7 +2889,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Psetex -->
-        <test-method status="PASS" signature="Test_Set(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Set" duration-ms="17" started-at="2020-08-21T15:01:40Z" description="Param:String var1, String var2;Case:指定key中插入value;Return:返回 OK" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_Set(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Set" duration-ms="16" started-at="2020-08-21T17:36:52Z" description="Param:String var1, String var2;Case:指定key中插入value;Return:返回 OK" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2911,7 +2911,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Set -->
-        <test-method status="PASS" signature="Test_SetRange(java.lang.String, java.lang.Long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_SetRange" duration-ms="17" started-at="2020-08-21T15:01:40Z" description="String var1, long var2, String var4;Case:根据给定的偏移量覆盖key存储的value值;Return: 返回字符串的长度" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_SetRange(java.lang.String, java.lang.Long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_SetRange" duration-ms="16" started-at="2020-08-21T17:36:52Z" description="String var1, long var2, String var4;Case:根据给定的偏移量覆盖key存储的value值;Return: 返回字符串的长度" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2935,7 +2935,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_SetRange -->
-        <test-method status="PASS" signature="Test_Setbit(java.lang.String, java.lang.Long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Setbit" duration-ms="122" started-at="2020-08-21T15:01:40Z" description="String var1, long var2, String var4;Case:偏移量上的位为1;Return: 返回指定偏移量原来储存的位" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_Setbit(java.lang.String, java.lang.Long, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Setbit" duration-ms="7" started-at="2020-08-21T17:36:52Z" description="String var1, long var2, String var4;Case:偏移量上的位为1;Return: 返回指定偏移量原来储存的位" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2959,7 +2959,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Setbit -->
-        <test-method status="PASS" signature="Test_Setex(java.lang.String, java.lang.Integer, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Setex" duration-ms="7" started-at="2020-08-21T15:01:40Z" description="String var1, int var2, String var3;Case:设置生存时间为60s;Return: OK" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_Setex(java.lang.String, java.lang.Integer, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Setex" duration-ms="8" started-at="2020-08-21T17:36:52Z" description="String var1, int var2, String var3;Case:设置生存时间为60s;Return: OK" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -2983,7 +2983,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Setex -->
-        <test-method status="PASS" signature="Test_Setnx(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Setnx" duration-ms="5" started-at="2020-08-21T15:01:40Z" description="String var1, String var2;Case:key不存在时值插入成功|key存在时值不会被覆盖;Return: 成功返回 1 失败返回 0 " data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_Setnx(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Setnx" duration-ms="20" started-at="2020-08-21T17:36:52Z" description="String var1, String var2;Case:key不存在时值插入成功|key存在时值不会被覆盖;Return: 成功返回 1 失败返回 0 " data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -3002,7 +3002,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Setnx -->
-        <test-method status="PASS" signature="Test_Setnx(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Setnx" duration-ms="6" started-at="2020-08-21T15:01:40Z" description="String var1, String var2;Case:key不存在时值插入成功|key存在时值不会被覆盖;Return: 成功返回 1 失败返回 0 " data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_Setnx(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Setnx" duration-ms="4" started-at="2020-08-21T17:36:52Z" description="String var1, String var2;Case:key不存在时值插入成功|key存在时值不会被覆盖;Return: 成功返回 1 失败返回 0 " data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -3021,7 +3021,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Setnx -->
-        <test-method status="PASS" signature="Test_StrLen(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_StrLen" duration-ms="7" started-at="2020-08-21T15:01:40Z" description="String var1;Case:正确返回字符串长度|key不存在返回0;Return: 返回字符串长度" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_StrLen(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_StrLen" duration-ms="5" started-at="2020-08-21T17:36:52Z" description="String var1;Case:正确返回字符串长度|key不存在返回0;Return: 返回字符串长度" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -3035,7 +3035,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_StrLen -->
-        <test-method status="PASS" signature="Test_StrLen(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_StrLen" duration-ms="5" started-at="2020-08-21T15:01:40Z" description="String var1;Case:正确返回字符串长度|key不存在返回0;Return: 返回字符串长度" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_StrLen(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_StrLen" duration-ms="5" started-at="2020-08-21T17:36:52Z" description="String var1;Case:正确返回字符串长度|key不存在返回0;Return: 返回字符串长度" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -3049,7 +3049,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_StrLen -->
-        <test-method status="PASS" signature="Test_Append(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Append" duration-ms="120" started-at="2020-08-21T15:01:40Z" description="Param:String var1, String var2;Case:key已存在追加到末尾;Return: key 中字符串的长度" data-provider="String_all" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="Test_Append(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="Test_Append" duration-ms="4" started-at="2020-08-21T17:36:52Z" description="Param:String var1, String var2;Case:key已存在追加到末尾;Return: key 中字符串的长度" data-provider="String_all" finished-at="2020-08-21T17:36:52Z">
           <params>
             <param index="0">
               <value>
@@ -3071,7 +3071,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Append -->
-        <test-method name="Test_Get" signature="Test_Get(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" status="PASS" duration-ms="5" finished-at="2020-08-21T15:01:40Z" started-at="2020-08-21T15:01:40Z" depends-on-methods="com.tester.testcase.RedisTestStringCases.Test_Set" data-provider="String_all" description="Param:String var1;Case:正常获取到key值;Return: 当 key 不存在时，返回nil,否则，返回 key 的值: 抛异常">
+        <test-method name="Test_Get" signature="Test_Get(java.lang.String, java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" status="PASS" duration-ms="7" finished-at="2020-08-21T17:36:52Z" started-at="2020-08-21T17:36:52Z" depends-on-methods="com.tester.testcase.RedisTestStringCases.Test_Set" data-provider="String_all" description="Param:String var1;Case:正常获取到key值;Return: 当 key 不存在时，返回nil,否则，返回 key 的值: 抛异常">
           <params>
             <param index="0">
               <value>
@@ -3090,7 +3090,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_Get -->
-        <test-method name="Test_GetBit" signature="Test_GetBit(java.lang.String, java.lang.Boolean)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" status="PASS" duration-ms="8" finished-at="2020-08-21T15:01:40Z" started-at="2020-08-21T15:01:40Z" depends-on-methods="com.tester.testcase.RedisTestStringCases.Test_Set" data-provider="String_all" description="Param:String var1;Case:获取的key值存在 or 不存在;Return: 存在返回1|不存在返回0">
+        <test-method name="Test_GetBit" signature="Test_GetBit(java.lang.String, java.lang.Boolean)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" status="PASS" duration-ms="6" finished-at="2020-08-21T17:36:52Z" started-at="2020-08-21T17:36:52Z" depends-on-methods="com.tester.testcase.RedisTestStringCases.Test_Set" data-provider="String_all" description="Param:String var1;Case:获取的key值存在 or 不存在;Return: 存在返回1|不存在返回0">
           <params>
             <param index="0">
               <value>
@@ -3109,7 +3109,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_GetBit -->
-        <test-method name="Test_GetBit" signature="Test_GetBit(java.lang.String, java.lang.Boolean)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" status="PASS" duration-ms="6" finished-at="2020-08-21T15:01:40Z" started-at="2020-08-21T15:01:40Z" depends-on-methods="com.tester.testcase.RedisTestStringCases.Test_Set" data-provider="String_all" description="Param:String var1;Case:获取的key值存在 or 不存在;Return: 存在返回1|不存在返回0">
+        <test-method name="Test_GetBit" signature="Test_GetBit(java.lang.String, java.lang.Boolean)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" status="PASS" duration-ms="5" finished-at="2020-08-21T17:36:52Z" started-at="2020-08-21T17:36:52Z" depends-on-methods="com.tester.testcase.RedisTestStringCases.Test_Set" data-provider="String_all" description="Param:String var1;Case:获取的key值存在 or 不存在;Return: 存在返回1|不存在返回0">
           <params>
             <param index="0">
               <value>
@@ -3128,7 +3128,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_GetBit -->
-        <test-method name="Test_GetRange" signature="Test_GetRange(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" status="PASS" duration-ms="139" finished-at="2020-08-21T15:01:40Z" started-at="2020-08-21T15:01:40Z" depends-on-methods="com.tester.testcase.RedisTestStringCases.Test_Set" data-provider="String_all" description="String var1, long var2, long var4;Case:正常传入start:0,end:2;Return: 截取得出的子字符串">
+        <test-method name="Test_GetRange" signature="Test_GetRange(java.lang.String)[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" status="PASS" duration-ms="6" finished-at="2020-08-21T17:36:52Z" started-at="2020-08-21T17:36:52Z" depends-on-methods="com.tester.testcase.RedisTestStringCases.Test_Set" data-provider="String_all" description="String var1, long var2, long var4;Case:正常传入start:0,end:2;Return: 截取得出的子字符串">
           <params>
             <param index="0">
               <value>
@@ -3142,7 +3142,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test_GetRange -->
-        <test-method status="PASS" signature="aftersuite()[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="aftersuite" is-config="true" duration-ms="0" started-at="2020-08-21T15:01:40Z" finished-at="2020-08-21T15:01:40Z">
+        <test-method status="PASS" signature="aftersuite()[pri:0, instance:com.tester.testcase.RedisTestStringCases@26f67b76]" name="aftersuite" is-config="true" duration-ms="1" started-at="2020-08-21T17:36:52Z" finished-at="2020-08-21T17:36:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftersuite -->

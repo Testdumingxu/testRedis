@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="124" failures="0" name="TestSuite" time="8.197" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2018.3.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\gome_maven_pro\test_redis"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\gome_maven_pro\test_redis"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="C:\gome_maven_pro\test_redis\target\surefire\surefirebooter7452903180596105261.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\gome\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Java\jdk1.8.0_211\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\OpenVPN\bin;CATALINA_HOME\bin;C:\python3;C:\Program Files\Git\cmd;C:\python3\Scripts;C:\nodejs\;C:\ORACLE\instantclient_11_2;C:\my_java\apache-maven-3.5.2\bin;C:\Microsoft VS Code\bin;C:\Users\gome\AppData\Roaming\npm;C:\PyCharm 2019.2\bin;;C:\Users\gome\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="surefire.test.class.path" value="C:\gome_maven_pro\test_redis\target\test-classes;C:\gome_maven_pro\test_redis\target\classes;C:\my_java\maven_repository\org\springframework\spring-context\5.0.5.RELEASE\spring-context-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-aop\5.0.5.RELEASE\spring-aop-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-beans\5.0.5.RELEASE\spring-beans-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-core\5.0.5.RELEASE\spring-core-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-jcl\5.0.5.RELEASE\spring-jcl-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-expression\5.0.5.RELEASE\spring-expression-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-test\5.1.16.RELEASE\spring-test-5.1.16.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-starter-test\2.1.15.RELEASE\spring-boot-starter-test-2.1.15.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-starter\2.1.15.RELEASE\spring-boot-starter-2.1.15.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot\2.1.15.RELEASE\spring-boot-2.1.15.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-autoconfigure\2.1.15.RELEASE\spring-boot-autoconfigure-2.1.15.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-starter-logging\2.1.15.RELEASE\spring-boot-starter-logging-2.1.15.RELEASE.jar;C:\my_java\maven_repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\my_java\maven_repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\my_java\maven_repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.2\log4j-to-slf4j-2.11.2.jar;C:\my_java\maven_repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\my_java\maven_repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\my_java\maven_repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\my_java\maven_repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-test\2.1.15.RELEASE\spring-boot-test-2.1.15.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-test-autoconfigure\2.1.15.RELEASE\spring-boot-test-autoconfigure-2.1.15.RELEASE.jar;C:\my_java\maven_repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\my_java\maven_repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\my_java\maven_repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\my_java\maven_repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\my_java\maven_repository\org\assertj\assertj-core\3.11.1\assertj-core-3.11.1.jar;C:\my_java\maven_repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;C:\my_java\maven_repository\net\bytebuddy\byte-buddy\1.9.3\byte-buddy-1.9.3.jar;C:\my_java\maven_repository\net\bytebuddy\byte-buddy-agent\1.9.3\byte-buddy-agent-1.9.3.jar;C:\my_java\maven_repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\my_java\maven_repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\my_java\maven_repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\my_java\maven_repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\my_java\maven_repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\my_java\maven_repository\org\xmlunit\xmlunit-core\2.6.4\xmlunit-core-2.6.4.jar;C:\my_java\maven_repository\com\relevantcodes\extentreports\2.41.1\extentreports-2.41.1.jar;C:\my_java\maven_repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\my_java\maven_repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\my_java\maven_repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\my_java\maven_repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\my_java\maven_repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\my_java\maven_repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\my_java\maven_repository\com\vimalselvam\testng-extentsreport\1.3.1\testng-extentsreport-1.3.1.jar;C:\my_java\maven_repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\my_java\maven_repository\com\aventstack\extentreports\3.0.6\extentreports-3.0.6.jar;C:\my_java\maven_repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\my_java\maven_repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\my_java\maven_repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\my_java\maven_repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\my_java\maven_repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\my_java\maven_repository\org\testng\testng\6.10\testng-6.10.jar;C:\my_java\maven_repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\my_java\maven_repository\junit\junit\4.12\junit-4.12.jar;C:\my_java\maven_repository\redis\clients\jedis\3.0.5-SNAPSHOT\jedis-3.0.5-SNAPSHOT.jar;C:\my_java\maven_repository\org\slf4j\slf4j-api\1.7.22\slf4j-api-1.7.22.jar;C:\my_java\maven_repository\org\apache\commons\commons-pool2\2.4.3\commons-pool2-2.4.3.jar;C:\my_java\maven_repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\my_java\maven_repository\redis\gcache\gcache\3.0.5-SNAPSHOT\gcache-3.0.5-SNAPSHOT.jar;C:\my_java\maven_repository\com\alibaba\fastjson\1.2.56\fastjson-1.2.56.jar;C:\my_java\maven_repository\org\apache\curator\curator-recipes\2.8.0\curator-recipes-2.8.0.jar;C:\my_java\maven_repository\org\apache\curator\curator-framework\2.8.0\curator-framework-2.8.0.jar;C:\my_java\maven_repository\org\apache\curator\curator-client\2.8.0\curator-client-2.8.0.jar;C:\my_java\maven_repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\my_java\maven_repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;C:\my_java\maven_repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\my_java\maven_repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;C:\my_java\maven_repository\com\gome\dp\data-metrics-client\1.0.8\data-metrics-client-1.0.8.jar;C:\my_java\maven_repository\com\codahale\metrics\metrics-core\3.0.2\metrics-core-3.0.2.jar;C:\my_java\maven_repository\com\codahale\metrics\metrics-servlets\3.0.2\metrics-servlets-3.0.2.jar;C:\my_java\maven_repository\com\codahale\metrics\metrics-healthchecks\3.0.2\metrics-healthchecks-3.0.2.jar;C:\my_java\maven_repository\com\codahale\metrics\metrics-json\3.0.2\metrics-json-3.0.2.jar;C:\my_java\maven_repository\com\codahale\metrics\metrics-jvm\3.0.2\metrics-jvm-3.0.2.jar;C:\my_java\maven_repository\com\fasterxml\jackson\core\jackson-databind\2.2.2\jackson-databind-2.2.2.jar;C:\my_java\maven_repository\com\fasterxml\jackson\core\jackson-annotations\2.2.2\jackson-annotations-2.2.2.jar;C:\my_java\maven_repository\com\fasterxml\jackson\core\jackson-core\2.2.2\jackson-core-2.2.2.jar;C:\my_java\maven_repository\commons-beanutils\commons-beanutils\1.8.3\commons-beanutils-1.8.3.jar;C:\my_java\maven_repository\net\sf\json-lib\json-lib\2.4\json-lib-2.4-jdk15.jar;C:\my_java\maven_repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\my_java\maven_repository\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar;C:\my_java\maven_repository\com\taobao\diamond\diamond-client\2.0.5.4.g1-SNAPSHOT\diamond-client-2.0.5.4.g1-SNAPSHOT.jar;C:\my_java\maven_repository\com\taobao\diamond\diamond-utils\2.0.5.4.g1-SNAPSHOT\diamond-utils-2.0.5.4.g1-SNAPSHOT.jar;C:\my_java\maven_repository\org\codehaus\jackson\jackson-core-lgpl\1.4.0\jackson-core-lgpl-1.4.0.jar;C:\my_java\maven_repository\org\codehaus\jackson\jackson-mapper-lgpl\1.4.0\jackson-mapper-lgpl-1.4.0.jar;C:\my_java\maven_repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\my_java\maven_repository\commons-io\commons-io\1.4\commons-io-1.4.jar;C:\my_java\maven_repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\my_java\maven_repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.repo.local" value="C:\my_java\maven_repository"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\gome"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="gome"/>
+    <property name="java.class.path" value="C:\gome_maven_pro\test_redis\target\test-classes;C:\gome_maven_pro\test_redis\target\classes;C:\my_java\maven_repository\org\springframework\spring-context\5.0.5.RELEASE\spring-context-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-aop\5.0.5.RELEASE\spring-aop-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-beans\5.0.5.RELEASE\spring-beans-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-core\5.0.5.RELEASE\spring-core-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-jcl\5.0.5.RELEASE\spring-jcl-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-expression\5.0.5.RELEASE\spring-expression-5.0.5.RELEASE.jar;C:\my_java\maven_repository\org\springframework\spring-test\5.1.16.RELEASE\spring-test-5.1.16.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-starter-test\2.1.15.RELEASE\spring-boot-starter-test-2.1.15.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-starter\2.1.15.RELEASE\spring-boot-starter-2.1.15.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot\2.1.15.RELEASE\spring-boot-2.1.15.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-autoconfigure\2.1.15.RELEASE\spring-boot-autoconfigure-2.1.15.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-starter-logging\2.1.15.RELEASE\spring-boot-starter-logging-2.1.15.RELEASE.jar;C:\my_java\maven_repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\my_java\maven_repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\my_java\maven_repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.2\log4j-to-slf4j-2.11.2.jar;C:\my_java\maven_repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\my_java\maven_repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\my_java\maven_repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\my_java\maven_repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-test\2.1.15.RELEASE\spring-boot-test-2.1.15.RELEASE.jar;C:\my_java\maven_repository\org\springframework\boot\spring-boot-test-autoconfigure\2.1.15.RELEASE\spring-boot-test-autoconfigure-2.1.15.RELEASE.jar;C:\my_java\maven_repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\my_java\maven_repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\my_java\maven_repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\my_java\maven_repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\my_java\maven_repository\org\assertj\assertj-core\3.11.1\assertj-core-3.11.1.jar;C:\my_java\maven_repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;C:\my_java\maven_repository\net\bytebuddy\byte-buddy\1.9.3\byte-buddy-1.9.3.jar;C:\my_java\maven_repository\net\bytebuddy\byte-buddy-agent\1.9.3\byte-buddy-agent-1.9.3.jar;C:\my_java\maven_repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\my_java\maven_repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\my_java\maven_repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\my_java\maven_repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\my_java\maven_repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\my_java\maven_repository\org\xmlunit\xmlunit-core\2.6.4\xmlunit-core-2.6.4.jar;C:\my_java\maven_repository\com\relevantcodes\extentreports\2.41.1\extentreports-2.41.1.jar;C:\my_java\maven_repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\my_java\maven_repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\my_java\maven_repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\my_java\maven_repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\my_java\maven_repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\my_java\maven_repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\my_java\maven_repository\com\vimalselvam\testng-extentsreport\1.3.1\testng-extentsreport-1.3.1.jar;C:\my_java\maven_repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\my_java\maven_repository\com\aventstack\extentreports\3.0.6\extentreports-3.0.6.jar;C:\my_java\maven_repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\my_java\maven_repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\my_java\maven_repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\my_java\maven_repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\my_java\maven_repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\my_java\maven_repository\org\testng\testng\6.10\testng-6.10.jar;C:\my_java\maven_repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\my_java\maven_repository\junit\junit\4.12\junit-4.12.jar;C:\my_java\maven_repository\redis\clients\jedis\3.0.5-SNAPSHOT\jedis-3.0.5-SNAPSHOT.jar;C:\my_java\maven_repository\org\slf4j\slf4j-api\1.7.22\slf4j-api-1.7.22.jar;C:\my_java\maven_repository\org\apache\commons\commons-pool2\2.4.3\commons-pool2-2.4.3.jar;C:\my_java\maven_repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\my_java\maven_repository\redis\gcache\gcache\3.0.5-SNAPSHOT\gcache-3.0.5-SNAPSHOT.jar;C:\my_java\maven_repository\com\alibaba\fastjson\1.2.56\fastjson-1.2.56.jar;C:\my_java\maven_repository\org\apache\curator\curator-recipes\2.8.0\curator-recipes-2.8.0.jar;C:\my_java\maven_repository\org\apache\curator\curator-framework\2.8.0\curator-framework-2.8.0.jar;C:\my_java\maven_repository\org\apache\curator\curator-client\2.8.0\curator-client-2.8.0.jar;C:\my_java\maven_repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\my_java\maven_repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;C:\my_java\maven_repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\my_java\maven_repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;C:\my_java\maven_repository\com\gome\dp\data-metrics-client\1.0.8\data-metrics-client-1.0.8.jar;C:\my_java\maven_repository\com\codahale\metrics\metrics-core\3.0.2\metrics-core-3.0.2.jar;C:\my_java\maven_repository\com\codahale\metrics\metrics-servlets\3.0.2\metrics-servlets-3.0.2.jar;C:\my_java\maven_repository\com\codahale\metrics\metrics-healthchecks\3.0.2\metrics-healthchecks-3.0.2.jar;C:\my_java\maven_repository\com\codahale\metrics\metrics-json\3.0.2\metrics-json-3.0.2.jar;C:\my_java\maven_repository\com\codahale\metrics\metrics-jvm\3.0.2\metrics-jvm-3.0.2.jar;C:\my_java\maven_repository\com\fasterxml\jackson\core\jackson-databind\2.2.2\jackson-databind-2.2.2.jar;C:\my_java\maven_repository\com\fasterxml\jackson\core\jackson-annotations\2.2.2\jackson-annotations-2.2.2.jar;C:\my_java\maven_repository\com\fasterxml\jackson\core\jackson-core\2.2.2\jackson-core-2.2.2.jar;C:\my_java\maven_repository\commons-beanutils\commons-beanutils\1.8.3\commons-beanutils-1.8.3.jar;C:\my_java\maven_repository\net\sf\json-lib\json-lib\2.4\json-lib-2.4-jdk15.jar;C:\my_java\maven_repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\my_java\maven_repository\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar;C:\my_java\maven_repository\com\taobao\diamond\diamond-client\2.0.5.4.g1-SNAPSHOT\diamond-client-2.0.5.4.g1-SNAPSHOT.jar;C:\my_java\maven_repository\com\taobao\diamond\diamond-utils\2.0.5.4.g1-SNAPSHOT\diamond-utils-2.0.5.4.g1-SNAPSHOT.jar;C:\my_java\maven_repository\org\codehaus\jackson\jackson-core-lgpl\1.4.0\jackson-core-lgpl-1.4.0.jar;C:\my_java\maven_repository\org\codehaus\jackson\jackson-mapper-lgpl\1.4.0\jackson-mapper-lgpl-1.4.0.jar;C:\my_java\maven_repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\my_java\maven_repository\commons-io\commons-io\1.4\commons-io-1.4.jar;C:\my_java\maven_repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\my_java\maven_repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_211\jre"/>
+    <property name="sun.java.command" value="C:\gome_maven_pro\test_redis\target\surefire\surefirebooter7452903180596105261.jar C:\gome_maven_pro\test_redis\target\surefire\surefire1320464016982757443tmp C:\gome_maven_pro\test_redis\target\surefire\surefire5946986871716527358tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="localRepository" value="C:\my_java\maven_repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount" time="0.268"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount" time="0.012"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount2" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount2" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Decr" time="0.136"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Decr" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_DecrBy" time="0.027"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_DecrBy" time="0.122"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_GetSet" time="0.012"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Incr" time="0.024"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Incr" time="0.134"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_IncrBy" time="0.019"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_IncrBy" time="0.151"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_IncrByFloat" time="0.011"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Psetex" time="0.126"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Set" time="0.018"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_SetRange" time="0.017"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Setbit" time="0.122"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Setex" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Setnx" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Setnx" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_StrLen" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_StrLen" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Append" time="0.12"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Get" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_GetBit" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_GetBit" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_GetRange" time="0.139"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_BlPop" time="0.032"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_BrPop" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LIndex" time="0.011"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LIndex" time="0.015"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LIndex" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LInsert" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LInsert" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LInsert" time="0.011"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LInsert" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPop" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPop" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPush" time="0.017"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPush" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPush" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPushx" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPushx" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LRem" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LRem" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LRem" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LSet" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LTrim" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPop" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPop" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPush" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPush" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPush" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPushx" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPushx" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LLen" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LLen" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LRange" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Sadd" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Sadd" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Scard" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Scard" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_SisMember" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_SisMember" time="0.029"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Srem" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Srem" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_SrandMember" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Sscan" time="0.013"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Spop" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Spop2" time="0.016"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZAdd" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZAdd2" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCard" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCard" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCount" time="0.018"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCount" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCount2" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZIncrBy" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRangeByScore" time="0.013"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRem" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRem" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRemByRank" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRemRangeByScore" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRevRange" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRevRangeByScore" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRevRank" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZScan" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZScore" time="0.017"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRange" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRank" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hexists" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hexists" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hexists" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HgetAll" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HgetAll" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HincrBy" time="0.02"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HincrBy" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HincrByFloat" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HincrByFloat" time="0.003"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hkeys" time="0.013"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hkeys" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmget" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmget" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmget" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmset" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmset" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset" time="0.003"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset" time="0.019"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset2" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset2" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hvals" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hvals" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hget" time="0.017"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hget" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hget" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hlen" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hlen" time="0.003"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hscan" time="0.052"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hdel" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hdel" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hdel" time="0.012"/>
+</testsuite>

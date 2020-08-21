@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="testGcache" class="redis.GcacheClient" destroy-method="close">
+        <!-- zookeeperAddress -->
+        <!--UAT环境-->
+        <constructor-arg value="10.112.179.149:2181,10.112.179.150:2181,10.112.179.151:2181" />
+        <!-- businessName -->
+        <constructor-arg value="TEST4" />
+    </bean>
+</beans>

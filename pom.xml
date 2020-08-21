@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gome.test</groupId>
-    <artifactId>test_redis</artifactId>
+    <artifactId>testredis</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>

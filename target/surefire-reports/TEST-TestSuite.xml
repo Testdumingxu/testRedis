@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="124" failures="0" name="TestSuite" time="9.851" errors="0" skipped="0">
+<testsuite tests="124" failures="0" name="TestSuite" time="6.025" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -21,7 +21,7 @@
     <property name="basedir" value="C:\gome_maven_pro\testredis"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="C:\gome_maven_pro\testredis\target\surefire\surefirebooter3094355766989243104.jar"/>
+    <property name="surefire.real.class.path" value="C:\gome_maven_pro\testredis\target\surefire\surefirebooter2613756790539646318.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\gome\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_211\jre"/>
-    <property name="sun.java.command" value="C:\gome_maven_pro\testredis\target\surefire\surefirebooter3094355766989243104.jar C:\gome_maven_pro\testredis\target\surefire\surefire5606154687199668679tmp C:\gome_maven_pro\testredis\target\surefire\surefire6146693015436260610tmp"/>
+    <property name="sun.java.command" value="C:\gome_maven_pro\testredis\target\surefire\surefirebooter2613756790539646318.jar C:\gome_maven_pro\testredis\target\surefire\surefire788409523211832574tmp C:\gome_maven_pro\testredis\target\surefire\surefire917559119440673096tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,128 +63,128 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount" time="0.108"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount" time="0.01"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount2" time="0.018"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount2" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Decr" time="0.008"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Decr" time="0.003"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_DecrBy" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_DecrBy" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_GetSet" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Incr" time="0.004"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Incr" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_IncrBy" time="0.016"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_IncrBy" time="0.048"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_IncrByFloat" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Psetex" time="0.008"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Set" time="0.016"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_SetRange" time="0.016"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount" time="0.037"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount2" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_BitCount2" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Decr" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Decr" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_DecrBy" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_DecrBy" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Incr" time="0.01"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Incr" time="0.017"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_IncrBy" time="0.018"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_IncrBy" time="0.019"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_IncrByFloat" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Psetex" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Set" time="0.01"/>
   <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Setbit" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Setex" time="0.008"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Setnx" time="0.02"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Setnx" time="0.004"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_StrLen" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_StrLen" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Append" time="0.004"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Get" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_GetBit" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_GetBit" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Setex" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Setnx" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Setnx" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_StrLen" time="0.024"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_StrLen" time="0.023"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Append" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_GetSet" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_SetRange" time="0.011"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_Get" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_GetBit" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_GetBit" time="0.004"/>
   <testcase classname="com.tester.testcase.RedisTestStringCases" name="Test_GetRange" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_BlPop" time="0.038"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_BrPop" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_BlPop" time="0.03"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_BrPop" time="0.009"/>
   <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LIndex" time="0.011"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LIndex" time="0.01"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LIndex" time="0.011"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LInsert" time="0.016"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LInsert" time="0.011"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LInsert" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LIndex" time="0.014"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LIndex" time="0.024"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LInsert" time="0.01"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LInsert" time="0.04"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LInsert" time="0.008"/>
   <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LInsert" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPop" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPop" time="0.008"/>
   <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPop" time="0.004"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPush" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPush" time="0.006"/>
   <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPush" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPush" time="0.027"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPush" time="0.017"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPushx" time="0.008"/>
   <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPushx" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LPushx" time="0.006"/>
   <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LRem" time="0.009"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LRem" time="0.017"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LRem" time="0.014"/>
   <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LRem" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LSet" time="0.008"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LTrim" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPop" time="0.009"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPop" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPush" time="0.008"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPush" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPush" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPushx" time="0.01"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPushx" time="0.014"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LLen" time="0.032"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LLen" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LRange" time="0.008"/>
-  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Sadd" time="0.012"/>
-  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Sadd" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Scard" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LSet" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LTrim" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPop" time="0.022"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPop" time="0.022"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPush" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPush" time="0.01"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPush" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPushx" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_RPushx" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LLen" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LLen" time="0.027"/>
+  <testcase classname="com.tester.testcase.RedisTestListCases" name="Test_LRange" time="0.01"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Sadd" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Sadd" time="0.013"/>
   <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Scard" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_SisMember" time="0.01"/>
-  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_SisMember" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Scard" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_SisMember" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_SisMember" time="0.008"/>
   <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Srem" time="0.007"/>
   <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Srem" time="0.006"/>
   <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_SrandMember" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Sscan" time="0.015"/>
-  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Spop" time="0.008"/>
-  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Spop2" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZAdd" time="0.004"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZAdd2" time="0.022"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Sscan" time="0.011"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Spop" time="0.017"/>
+  <testcase classname="com.tester.testcase.RedisTestSetCases" name="Test_Spop2" time="0.01"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZAdd" time="0.012"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZAdd2" time="0.005"/>
   <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCard" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCard" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCard" time="0.013"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCount" time="0.008"/>
   <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCount" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCount" time="0.01"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCount2" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZCount2" time="0.019"/>
   <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZIncrBy" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRangeByScore" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRem" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRem" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRemByRank" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRemRangeByScore" time="0.01"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRevRange" time="0.02"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRevRangeByScore" time="0.009"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRevRank" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZScan" time="0.011"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZScore" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRange" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRank" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hexists" time="0.011"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hexists" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hexists" time="0.012"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HgetAll" time="0.036"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRangeByScore" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRem" time="0.019"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRem" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRemByRank" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRemRangeByScore" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRevRange" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRevRangeByScore" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRevRank" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZScan" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZScore" time="0.017"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRange" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestSortedSetCases" name="Test_ZRank" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hexists" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hexists" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hexists" time="0.004"/>
   <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HgetAll" time="0.008"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HincrBy" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HgetAll" time="0.004"/>
   <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HincrBy" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HincrByFloat" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HincrByFloat" time="0.01"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hkeys" time="0.008"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hkeys" time="0.008"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmget" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmget" time="0.013"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmget" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmset" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmset" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HincrBy" time="0.024"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HincrByFloat" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_HincrByFloat" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hkeys" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hkeys" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmget" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmget" time="0.004"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmget" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmset" time="0.009"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hmset" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset" time="0.006"/>
   <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset" time="0.007"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset" time="0.004"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset2" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset2" time="0.005"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset" time="0.026"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset" time="0.006"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset2" time="0.016"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hset2" time="0.013"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hvals" time="0.006"/>
   <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hvals" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hvals" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hget" time="0.006"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hget" time="0.003"/>
   <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hget" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hlen" time="0.005"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hlen" time="0.003"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hscan" time="0.016"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hdel" time="0.009"/>
-  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hdel" time="0.003"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hget" time="0.01"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hget" time="0.007"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hlen" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hlen" time="0.033"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hscan" time="0.019"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hdel" time="0.01"/>
   <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hdel" time="0.008"/>
+  <testcase classname="com.tester.testcase.RedisTestHashCases" name="Test_Hdel" time="0.005"/>
 </testsuite>

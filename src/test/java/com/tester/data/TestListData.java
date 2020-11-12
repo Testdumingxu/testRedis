@@ -102,7 +102,11 @@ public class TestListData {
                     {"lpopkey", "bar"},
                     {"lpopkey_no", null}
             };
-        }else if (methodName.equals("Test_BrPop")) {
+        } else if (methodName.equals("Test_LrangeBytes")) {
+            return new Object[][]{
+                    {"LrangeBytes", 1L, 2L}
+            };
+        } else if (methodName.equals("Test_BrPop")) {
             return new Object[][]{
                     {30,"brpopkey"}
             };

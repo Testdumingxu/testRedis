@@ -1,6 +1,7 @@
 package com.tester.data;
 
 import org.testng.annotations.DataProvider;
+import redis.clients.jedis.SortingParams;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -31,12 +32,82 @@ public class TestStringData {
                     // 测试数据 testdecr：key值为数值  test_decr：key值为非数值
                     {"testdecr"}, {"test_decr"}
             };
+        } else if (methodName.equals("Test_Increx")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"testdecr2", 10}
+            };
+        } else if (methodName.equals("Test_Substr")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"testdecr2", 0, 1}
+            };
         } else if (methodName.equals("Test_IncrBy")) {
           return new Object[][] {
                   // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
                   {"stringcount"},{"stringnumber"}
           };
-        }else if (methodName.equals("Test_IncrByFloat")) {
+        } else if (methodName.equals("Test_setAndCompress")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"stringsetAndCompress","stringsetAndCompressValue"}
+            };
+        } else if (methodName.equals("getAndUncompress")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"stringsetAndCompress", "stringsetAndCompressValue"}
+            };
+        } else if (methodName.equals("Test_Exists")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"stringsetAndCompress"}
+            };
+        } else if (methodName.equals("Test_Persist")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"stringmykey", null}
+            };
+        } else if (methodName.equals("Test_Expire")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"keyexpire", 10, 1L}
+            };
+        } else if (methodName.equals("Test_Pexpire")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"keyPexpire", 10000L, 1L}
+            };
+        } else if (methodName.equals("Test_ExpireAt")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"keyExpireAt", System.currentTimeMillis()/ 1000L, 1L}
+            };
+        } else if (methodName.equals("Test_PexpireAt")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"keyPexpireAt", System.currentTimeMillis()/ 1000L, 1L}
+            };
+        } else if (methodName.equals("Test_Type")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"stringsetAndCompress", "string"}
+            };
+        } else if (methodName.equals("getAndUncompressUtf8")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"stringsetAndCompressUtf8", "stringsetAndCompressUtf8Value"}
+            };
+        } else if (methodName.equals("Test_ttl")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"keyexpire"}
+            };
+        } else if (methodName.equals("Test_setAndCompressUtf8")) {
+            return new Object[][] {
+                    // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
+                    {"stringsetAndCompressUtf8","stringsetAndCompressUtf8Value"}
+            };
+        } else if (methodName.equals("Test_IncrByFloat")) {
             return new Object[][] {
                     // 测试数据 stringcount(存在):key值为数值, stringnumber(不存在):key值为数值
                     {"stringcount", 1.1}
@@ -64,7 +135,7 @@ public class TestStringData {
         } else if (methodName.equals("Test_Setbit")) {
             return new Object[][]{
                     // 测试数据 stringsetbit: 字符串,01100001: 二进制, "1"：偏移量
-                    {"stringsetbit", 01100001L, "1"}
+                    {"stringsetbit", 01100001L, "0"}
             };
         }else if (methodName.equals("Test_Setnx")) {
             return new Object[][]{
@@ -74,9 +145,14 @@ public class TestStringData {
                     {"stringkey4", "stringvalue4"}
             };
         } else if (methodName.equals("Test_Setex")) {
+            byte[] bytes = new byte[3];
+            bytes[0] = 1;
+            bytes[1] = 0;
+            bytes[2] = 0;
+
             return new Object[][]{
                     // 测试数据 stringsetbit: 字符串,01100001: 二进制, "1"：偏移量
-                    {"stringcache_user", 60, "10086"}
+                    {"stringcache_user", 60, bytes, "OK"}
             };
         } else if (methodName.equals("Test_SetRange")) {
             return new Object[][]{
@@ -89,7 +165,52 @@ public class TestStringData {
                     {"stringkey"},
                     {"stringstrlen"}
             };
-        } else {
+        } else if (methodName.equals("Test_SetNxex")) {
+            return new Object[][]{
+                    // 测试数据 stringkey: 存在; stringstrlen: 不存在
+                    {"stringSetNxex",10,"stringSetNxex"}
+            };
+        } else if (methodName.equals("Test_Sort")) {
+            return new Object[][]{
+                    {"sortkey3"}
+            };
+        } else if (methodName.equals("Test_Sort2")) {
+            return new Object[][]{
+                    {"sortkey3"}
+            };
+        } else if (methodName.equals("Test_Pfadd")) {
+            String[] str = new String[] {"1","2"};
+            return new Object[][]{
+                    {"Hello Gcache", str}
+            };
+        } else if (methodName.equals("Test_Echo")) {
+            return new Object[][]{
+                    {"Hello Gcache"}
+            };
+        } else if (methodName.equals("Test_pfcount")) {
+            return new Object[][]{
+                    {"myphone"}
+            };
+        } else if (methodName.equals("Test_Pttl")) {
+            return new Object[][]{
+                    {"getkey22", -2L}
+            };
+        } else if (methodName.equals("Test_GetBytes")) {
+            return new Object[][]{
+                    {"getbyteskey"}
+            };
+        } else if (methodName.equals("Test_Setex2")) {
+            return new Object[][]{
+                    {"Setexkey", 10, "Setexvalue", "OK"}
+            };
+        } else if (methodName.equals("Test_Setex3")) {
+            byte[] var = {10};
+            byte[] var2 = {20};
+            return new Object[][]{
+                    // 测试数据 stringsetbit: 字符串,01100001: 二进制, "1"：偏移量
+                    {var, 60, var2}
+            };
+        }  else {
             return null;
         }
     }

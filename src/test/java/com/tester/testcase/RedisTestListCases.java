@@ -67,6 +67,15 @@ public class RedisTestListCases {
         Reporter.log("实际结果: " + result);
     }
 
+    @Test(description = "Param:|String key, long start, long end|</br>",
+            dataProvider = "List_all",
+            dataProviderClass = com.tester.data.TestListData.class)
+    public void Test_LrangeBytes(String key, long start, long end) {
+        List<byte[]> result = bean.lrangeBytes(key, start, end);
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+    }
+
     @Test(description = "Param:|String var1, long var2|</br>" +
             "Case:|下标为0|下标为-1|下标超出区间范围|</br>" +
             "Return:|返回下标索引处的值|",

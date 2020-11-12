@@ -5,7 +5,10 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 import redis.Gcache;
+import redis.clients.jedis.SortingParams;
 import redis.clients.jedis.exceptions.JedisDataException;
+
+import java.util.List;
 
 @Test(groups = "string")
 public class RedisTestStringCases {
@@ -17,14 +20,181 @@ public class RedisTestStringCases {
      */
     @BeforeClass
     public void beforeClass() {
-        System.out.println("--------开始执行set用例--------");
+        System.out.println("--------开始执行string用例--------");
         ClassPathXmlApplicationContext app = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
         bean = (Gcache) app.getBean("testGcache");
+        bean.set("sortkey", "apple");
+        bean.pfadd("myphone","hll","foo","bar","zap");
+        bean.pfadd("myphone","zap","zap","zap");
+        bean.pfadd("myphone","foo","bar");
+        bean.lpush("sortkey2","apple","banana","cat");
+
     }
 
     @AfterClass
     public void aftersuite() {
-        System.out.println("--------执行结束set用例--------");
+
+        System.out.println("--------执行结束string用例--------");
+        System.out.println("-----开始清除key---------------");
+        bean.del("stringkey");
+        bean.del("testdecr");
+        bean.del("stringcount");
+        bean.del("stringsetAndCompress");
+        bean.del("stringkey3");
+        bean.del("stringkey2");
+        bean.del("stringsetbit");
+        bean.del("stringkey4");
+        bean.del("stringcache_user");
+        bean.del("stringSetRange");
+        bean.del("stringstrlen");
+        bean.del("sortkey");
+        bean.del("sortkey2");
+        bean.del("myphone");
+    }
+
+    @Test(description = "Param:String var1, String var2;" +
+            "Case:setAndCompress正常调用;" +
+            "Return:返回 OK",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_setAndCompress(String var1, String var2) {
+        String result = bean.setAndCompress(var1, var2);
+        Reporter.log("插入的key值：" + var1 + ";" + "value值：" + bean.get(var2));
+        Assert.assertEquals("OK", result);
+        Reporter.log("预期结果: OK | " + "实际结果: " + result);
+    }
+
+    @Test(description = "Param:String var1, String var2;" +
+            "Case:setAndCompressUtf8正常调用;" +
+            "Return:返回 OK",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_setAndCompressUtf8(String var1, String var2) {
+        String result = bean.setAndCompressUtf8(var1, var2);
+        Reporter.log("插入的key值：" + var1 + ";" + "value值：" + bean.get(var2));
+        Assert.assertEquals("OK", result);
+        Reporter.log("预期结果: OK | " + "实际结果: " + result);
+    }
+
+    @Test(description = "Param:String var1, String var2;" +
+            "Case:getAndUncompress正常调用;" +
+            "Return:返回 OK",
+            dataProvider = "String_all",
+            dependsOnMethods = {"Test_setAndCompress"},
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void getAndUncompress(String var1, String var2) {
+        String result = bean.getAndUncompress(var1);
+        Reporter.log("获取的value值：" + result + ";");
+        Assert.assertEquals(var2, result);
+        Reporter.log("预期结果: " + var2 + "| " + "实际结果: " + result);
+    }
+
+    @Test(description = "Param:String var1, String var2;" +
+            "Case:getAndUncompressUtf8正常调用;" +
+            "Return:返回 OK",
+            dataProvider = "String_all",
+            dependsOnMethods = {"Test_setAndCompressUtf8"},
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void getAndUncompressUtf8(String var1, String var2) {
+        String result = bean.getAndUncompressUtf8(var1);
+        Reporter.log("获取的value值：" + result + ";");
+        Assert.assertEquals(var2, result);
+        Reporter.log("预期结果: " + var2 + "| " + "实际结果: " + result);
+    }
+
+    @Test(description = "Param:String var1" +
+            "Case:指定key是否存在;" +
+            "Return:存在返回 true 否则 false",
+            dataProvider = "String_all",
+            dependsOnMethods = {"getAndUncompress"},
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Exists(String key) {
+        Boolean result = bean.exists(key);
+        Reporter.log("插入的key值：" + key + ";" + "value值：" + bean.get(key));
+        Assert.assertTrue(result);
+        Reporter.log("预期结果: True | " + "实际结果: " + result);
+    }
+    @Test(description = "Param:String var1" +
+            "Case:成功移除key的生存时间;" +
+            "Return:存在返回 true 否则 false",
+            dataProvider = "String_all",
+            dependsOnMethods = {"getAndUncompress"},
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Persist(String key, String expect) {
+        bean.set(key,"Hello");
+        bean.expire(key, 10);
+        Long result = bean.persist(key);
+        Reporter.log("key值：" + key + ";" + "value值：" + bean.get(key));
+        Assert.assertNull(expect);
+        Reporter.log("预期结果: "+ expect + " | " + "实际结果: " + result);
+    }
+
+    @Test(description = "Param:String var1" +
+            "Case:设置key的生存时间;" +
+            "Return:存在返回 true 否则 false",
+            dataProvider = "String_all",
+            dependsOnMethods = {"getAndUncompress"},
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Expire(String key, int time, Long expect) {
+        bean.set(key,"Hello");
+        Long result = bean.expire(key, time);
+        Reporter.log("key值：" + key + ";" + "value值：" + bean.get(key));
+        Assert.assertEquals(expect, result);
+        Reporter.log("预期结果: "+ expect + " | " + "实际结果: " + result);
+    }
+
+    @Test(description = "Param:String var1" +
+            "Case:设置key的生存时间毫秒单位;" +
+            "Return:存在返回 true 否则 false",
+            dataProvider = "String_all",
+            dependsOnMethods = {"getAndUncompress"},
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Pexpire(String key, Long time, Long expect) {
+        bean.set(key,"Hello");
+        Long result = bean.pexpire(key, time);
+        Reporter.log("key值：" + key + ";" + "value值：" + bean.get(key));
+        Assert.assertEquals(expect, result);
+        Reporter.log("预期结果: "+ expect + " | " + "实际结果: " + result);
+    }
+
+    @Test(description = "Param:String var1" +
+            "Case:设置key的生存时间(时间以时间戳传入);" +
+            "Return:存在返回 true 否则 false",
+            dataProvider = "String_all",
+            dependsOnMethods = {"getAndUncompress"},
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_ExpireAt(String key, Long time, Long expect) {
+        bean.set(key,"Hello");
+        Long result = bean.expireAt(key, time);
+        Reporter.log("key值：" + key + ";" + "value值：" + bean.get(key));
+        Assert.assertEquals(expect, result);
+        Reporter.log("预期结果: "+ expect + " | " + "实际结果: " + result);
+    }
+
+    @Test(description = "Param:String var1" +
+            "Case:设置key的生存时间毫秒单位(时间以时间戳传入);" +
+            "Return:存在返回 true 否则 false",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_PexpireAt(String key, Long time, Long expect) {
+        bean.set(key,"Hello");
+        Long result = bean.pexpireAt(key, time);
+        Reporter.log("key值：" + key + ";" + "value值：" + bean.get(key));
+        Assert.assertEquals(expect, result);
+        Reporter.log("预期结果: "+ expect + " | " + "实际结果: " + result);
+    }
+
+    @Test(description = "Param:String var1" +
+            "Case:设置key的生存时间毫秒单位(时间以时间戳传入);" +
+            "Return:存在返回 true 否则 false",
+            dataProvider = "String_all",
+            dependsOnMethods = {"Test_Expire"},
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_ttl(String key) {
+        Long result = bean.ttl(key);
+        Reporter.log("key值：" + key + ";" + "value值：" + bean.get(key));
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
     }
 
     @Test(description = "Param:String var1, String var2;" +
@@ -39,6 +209,19 @@ public class RedisTestStringCases {
         Reporter.log("预期结果: OK | " + "实际结果: " + result);
     }
 
+    @Test(description = "Param:String var1;" +
+            "Case:返回存储的值的类型;" +
+            "Return:返回 类型",
+            dataProvider = "String_all",
+            dependsOnMethods = {"Test_setAndCompress"},
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Type(String key, String value) {
+        String result = bean.type(key);
+        Reporter.log("key值：" + key + ";" + "value值：" + bean.get(key));
+        Assert.assertEquals(value, result);
+        Reporter.log("预期结果:" + value + " | " + "实际结果: " + result);
+    }
+
     @Test(description = "Param:String var1, String var2;" +
             "Case:key已存在追加到末尾;" +
             "Return: key 中字符串的长度",
@@ -46,6 +229,16 @@ public class RedisTestStringCases {
             dataProviderClass = com.tester.data.TestStringData.class)
     public void Test_Append(String key, String value) {
         Long result = bean.append(key, value);
+        Reporter.log("插入的key值：" + key + ";" + "value值：" + result);
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "Param:String key, int start, int end;",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Substr(String key, int start, int end) {
+        String result = bean.substr(key, start, end);
         Reporter.log("插入的key值：" + key + ";" + "value值：" + result);
         Assert.assertNotNull(result);
         Reporter.log("实际结果: " + result);
@@ -150,7 +343,7 @@ public class RedisTestStringCases {
             dataProviderClass = com.tester.data.TestStringData.class)
     public void Test_GetSet(String key, String value) {
         String result = bean.getSet(key, value);
-        Assert.assertNotNull(result);
+        Assert.assertNull(result);
         Reporter.log("实际结果: " + result);
     }
 
@@ -161,6 +354,17 @@ public class RedisTestStringCases {
             dataProviderClass = com.tester.data.TestStringData.class)
     public void Test_Incr(String key) {
         Long result = bean.incr(key);
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "String var1;" +
+            "Case:key中储存的数字值增一;" +
+            "Return: 返回+1后的值",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Increx(String key, int seconds) {
+        Long result = bean.increx(key, seconds);
         Assert.assertNotNull(result);
         Reporter.log("实际结果: " + result);
     }
@@ -176,6 +380,7 @@ public class RedisTestStringCases {
         Assert.assertNotNull(result);
         Reporter.log("实际结果: " + result);
     }
+
 
     @Test(description = "String var1, double var2;" +
             "Case:将 key 所储存的值+1.1;" +
@@ -206,7 +411,7 @@ public class RedisTestStringCases {
             dataProviderClass = com.tester.data.TestStringData.class)
     public void Test_Setbit(String key, Long value, String offset) {
         Boolean result = bean.setbit(key, value, offset);
-        Assert.assertTrue(result);
+        Assert.assertFalse(result);
         Reporter.log("实际结果: " + result);
     }
 
@@ -216,9 +421,9 @@ public class RedisTestStringCases {
             "Return: OK",
             dataProvider = "String_all",
             dataProviderClass = com.tester.data.TestStringData.class)
-    public void Test_Setex(String key, Integer time, String value) {
-        String result = bean.setex(key, time, value);
-        Assert.assertEquals("OK", result);
+    public void Test_Setex2(String key, int seconds, String value, String expect) {
+        String result = bean.setex(key, seconds, value);
+        Assert.assertEquals(result,expect);
         Reporter.log("实际结果: " + result);
     }
 
@@ -255,4 +460,101 @@ public class RedisTestStringCases {
         Assert.assertNotNull(result);
         Reporter.log("实际结果: " + result);
     }
+
+    @Test(description = "命令为指定的 key 设置值及其过期时间。如果 key 已经存在， SETEX 命令将会替换旧的值",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_SetNxex(String key, int seconds, String value) {
+        Long result = bean.setnxex(key, seconds, value);
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "SORT key 返回键值从小到大排序的结果。",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Sort(String key) {
+        List<String> result = bean.sort(key);
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "SORT key 返回键值从小到大排序的结果。",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Sort2(String key) {
+        SortingParams sortingParameters = null;
+        List<String> result = bean.sort(key, sortingParameters);
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "打印一个特定的信息 message ，测试时使用。",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Echo(String key) {
+        String result = bean.echo(key);
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "pfadd命令。",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Pfadd(final String key, final String... elements) {
+        Long result = bean.pfadd(key, elements);
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "pfcount命令。",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_pfcount(final String key) {
+        Long result = bean.pfcount(key);
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "pttl当 key 不存在返回-2。",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Pttl(final String key, Long expect) {
+        Long result = bean.pttl(key);
+        Assert.assertEquals(result, expect);
+        Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "将值value关联到key并将key的生存时间设为 seconds (以秒为单位)",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Setex(String key, int seconds, byte[] value, String expect) {
+        String result = bean.setex(key, seconds, value);
+        Assert.assertEquals(result, expect);
+        Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "byte[] var1, int var2, byte[] var3;" +
+            "Case:设置生存时间为60s;" +
+            "Return: OK",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_Setex3(byte[] key, int time, byte[] value) {
+        String result = bean.setex(key, time, value);
+        Assert.assertEquals("OK", result);
+        Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "将值value关联到key并将key的生存时间设为 seconds (以秒为单位)",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_GetBytes(String key) {
+        byte[] result = bean.getBytes(key);
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+
+    }
+
+
+
 }

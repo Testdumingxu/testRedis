@@ -7135,43 +7135,43 @@
 </script>
 <script type="text/javascript">
     var resultData = {
-  "testPass": 124,
+  "testPass": 173,
   "testSkip": 0,
-  "totalTime": "1261ms",
-  "testAll": 124,
-  "beginTime": "2020-08-31 15:29:24.030",
+  "totalTime": "1812ms",
+  "testAll": 173,
+  "beginTime": "2020-11-12 15:33:51.650",
   "testResult": [
     {
       "className": "com.tester.testcase.RedisTestStringCases",
-      "methodName": "Test_BitCount",
-      "description": "Param:String var1;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量",
-      "spendTime": "37ms",
+      "methodName": "Test_Append",
+      "description": "Param:String var1, String var2;Case:key已存在追加到末尾;Return: key 中字符串的长度",
+      "spendTime": "15ms",
       "status": "成功",
       "log": [
-        "统计的key值：testdecr;value值：7",
-        "实际结果:&nbsp;7"
+        "插入的key值：stringkey;value值：11",
+        "实际结果:&nbsp;11"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_BitCount",
       "description": "Param:String var1;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量",
-      "spendTime": "7ms",
+      "spendTime": "8ms",
       "status": "成功",
       "log": [
-        "统计的key值：test_decr;value值：12",
-        "实际结果:&nbsp;12"
+        "统计的key值：testdecr;value值：0",
+        "实际结果:&nbsp;0"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
-      "methodName": "Test_BitCount2",
-      "description": "Param:String var1 long var2, long var4;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量",
-      "spendTime": "4ms",
+      "methodName": "Test_BitCount",
+      "description": "Param:String var1;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
-        "统计的key值：testdecr;value值：7",
-        "实际结果:&nbsp;7"
+        "统计的key值：test_decr;value值：15",
+        "实际结果:&nbsp;15"
       ]
     },
     {
@@ -7181,79 +7181,120 @@
       "spendTime": "5ms",
       "status": "成功",
       "log": [
-        "统计的key值：test_decr;value值：12",
-        "实际结果:&nbsp;12"
+        "统计的key值：testdecr;value值：0",
+        "实际结果:&nbsp;0"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
-      "methodName": "Test_Decr",
-      "description": "Param:String var1;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常",
-      "spendTime": "4ms",
-      "status": "成功",
-      "log": [
-        "统计的key值：testdecr;value值：30",
-        "实际结果:&nbsp;30"
-      ]
-    },
-    {
-      "className": "com.tester.testcase.RedisTestStringCases",
-      "methodName": "Test_Decr",
-      "description": "Param:String var1;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常",
-      "spendTime": "4ms",
-      "status": "成功",
-      "log": [
-        "统计的key值：test_decr;value值：-70",
-        "实际结果:&nbsp;-70"
-      ]
-    },
-    {
-      "className": "com.tester.testcase.RedisTestStringCases",
-      "methodName": "Test_DecrBy",
-      "description": "Param:String var1 long var2;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常",
+      "methodName": "Test_BitCount2",
+      "description": "Param:String var1 long var2, long var4;Case:计算被设置为 1 的比特位的数量;Return: 被设置为 1 的位的数量",
       "spendTime": "6ms",
       "status": "成功",
       "log": [
-        "统计的key值：testdecr;value值：28",
-        "实际结果:&nbsp;28"
+        "统计的key值：test_decr;value值：15",
+        "实际结果:&nbsp;15"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Decr",
+      "description": "Param:String var1;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常",
+      "spendTime": "9ms",
+      "status": "成功",
+      "log": [
+        "统计的key值：testdecr;value值：-1",
+        "实际结果:&nbsp;-1"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Decr",
+      "description": "Param:String var1;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常",
+      "spendTime": "6ms",
+      "status": "成功",
+      "log": [
+        "统计的key值：test_decr;value值：-188",
+        "实际结果:&nbsp;-188"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_DecrBy",
       "description": "Param:String var1 long var2;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常",
-      "spendTime": "4ms",
-      "status": "成功",
-      "log": [
-        "统计的key值：test_decr;value值：-72",
-        "实际结果:&nbsp;-72"
-      ]
-    },
-    {
-      "className": "com.tester.testcase.RedisTestStringCases",
-      "methodName": "Test_Incr",
-      "description": "String var1;Case:key中储存的数字值增一;Return: 返回+1后的值",
       "spendTime": "9ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;29"
+        "统计的key值：testdecr;value值：-3",
+        "实际结果:&nbsp;-3"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_DecrBy",
+      "description": "Param:String var1 long var2;Case:对存在的key且为数字值 or 不存在的key or key的值不为数字 进行 DECR;Return: 存在的key:key本身-1|不存在的key-1|key不为数字: 抛异常",
+      "spendTime": "5ms",
+      "status": "成功",
+      "log": [
+        "统计的key值：test_decr;value值：-190",
+        "实际结果:&nbsp;-190"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Echo",
+      "description": "打印一个特定的信息 message ，测试时使用。",
+      "spendTime": "38ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;Hello&nbsp;Gcache"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_GetBytes",
+      "description": "将值value关联到key并将key的生存时间设为 seconds (以秒为单位)",
+      "spendTime": "9ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;[B@549949be"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_GetSet",
+      "description": "String var1, String var2;Case:设置value值返回旧的值;Return: 返回给定 key 的旧值",
+      "spendTime": "14ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;null"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_Incr",
       "description": "String var1;Case:key中储存的数字值增一;Return: 返回+1后的值",
-      "spendTime": "16ms",
+      "spendTime": "8ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;-71"
+        "实际结果:&nbsp;-2"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Incr",
+      "description": "String var1;Case:key中储存的数字值增一;Return: 返回+1后的值",
+      "spendTime": "5ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;-189"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_IncrBy",
       "description": "String var1, long var2;Case:将 key 所储存的值+2;Return: 返回相加后的值",
-      "spendTime": "18ms",
+      "spendTime": "14ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;22"
@@ -7263,17 +7304,17 @@
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_IncrBy",
       "description": "String var1, long var2;Case:将 key 所储存的值+2;Return: 返回相加后的值",
-      "spendTime": "19ms",
+      "spendTime": "11ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;44"
+        "实际结果:&nbsp;162"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_IncrByFloat",
       "description": "String var1, double var2;Case:将 key 所储存的值+1.1;Return: 返回给定 key 的旧值",
-      "spendTime": "5ms",
+      "spendTime": "43ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;21.1"
@@ -7281,9 +7322,40 @@
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Increx",
+      "description": "String var1;Case:key中储存的数字值增一;Return: 返回+1后的值",
+      "spendTime": "38ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;1"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_PexpireAt",
+      "description": "Param:String var1Case:设置key的生存时间毫秒单位(时间以时间戳传入);Return:存在返回 true 否则 false",
+      "spendTime": "16ms",
+      "status": "成功",
+      "log": [
+        "key值：keyPexpireAt;value值：null",
+        "预期结果:&nbsp;1&nbsp;|&nbsp;实际结果:&nbsp;1"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Pfadd",
+      "description": "pfadd命令。",
+      "spendTime": "3ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;0"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_Psetex",
       "description": "String var1, long var2, String var4;Case:设置key值1000ms;Return: 返回OK",
-      "spendTime": "5ms",
+      "spendTime": "35ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;OK"
@@ -7291,9 +7363,19 @@
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Pttl",
+      "description": "pttl当 key 不存在返回-2。",
+      "spendTime": "8ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;-2"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_Set",
       "description": "Param:String var1, String var2;Case:指定key中插入value;Return:返回 OK",
-      "spendTime": "10ms",
+      "spendTime": "14ms",
       "status": "成功",
       "log": [
         "插入的key值：stringkey;value值：stringvalue",
@@ -7302,17 +7384,47 @@
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
-      "methodName": "Test_Setbit",
-      "description": "String var1, long var2, String var4;Case:偏移量上的位为1;Return: 返回指定偏移量原来储存的位",
-      "spendTime": "6ms",
+      "methodName": "Test_SetNxex",
+      "description": "命令为指定的 key 设置值及其过期时间。如果 key 已经存在， SETEX 命令将会替换旧的值",
+      "spendTime": "15ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;true"
+        "实际结果:&nbsp;1"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_SetRange",
+      "description": "String var1, long var2, String var4;Case:根据给定的偏移量覆盖key存储的value值;Return: 返回字符串的长度",
+      "spendTime": "12ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;11"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Setbit",
+      "description": "String var1, long var2, String var4;Case:偏移量上的位为1;Return: 返回指定偏移量原来储存的位",
+      "spendTime": "7ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;false"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_Setex",
+      "description": "将值value关联到key并将key的生存时间设为 seconds (以秒为单位)",
+      "spendTime": "7ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;OK"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Setex2",
       "description": "String var1, int var2, String var3;Case:设置生存时间为60s;Return: OK",
       "spendTime": "6ms",
       "status": "成功",
@@ -7324,10 +7436,10 @@
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_Setnx",
       "description": "String var1, String var2;Case:key不存在时值插入成功|key存在时值不会被覆盖;Return: 成功返回 1 失败返回 0 ",
-      "spendTime": "9ms",
+      "spendTime": "19ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;0"
+        "实际结果:&nbsp;1"
       ]
     },
     {
@@ -7342,9 +7454,29 @@
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Sort",
+      "description": "SORT key 返回键值从小到大排序的结果。",
+      "spendTime": "6ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;[11,&nbsp;12]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Sort2",
+      "description": "SORT key 返回键值从小到大排序的结果。",
+      "spendTime": "5ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;[11,&nbsp;12]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_StrLen",
       "description": "String var1;Case:正确返回字符串长度|key不存在返回0;Return: 返回字符串长度",
-      "spendTime": "24ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;11"
@@ -7354,7 +7486,7 @@
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_StrLen",
       "description": "String var1;Case:正确返回字符串长度|key不存在返回0;Return: 返回字符串长度",
-      "spendTime": "23ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;0"
@@ -7362,50 +7494,72 @@
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
-      "methodName": "Test_Append",
-      "description": "Param:String var1, String var2;Case:key已存在追加到末尾;Return: key 中字符串的长度",
-      "spendTime": "5ms",
+      "methodName": "Test_Substr",
+      "description": "Param:String key, int start, int end;",
+      "spendTime": "7ms",
       "status": "成功",
       "log": [
-        "插入的key值：stringkey;value值：22",
-        "实际结果:&nbsp;22"
+        "插入的key值：testdecr2;value值：1",
+        "实际结果:&nbsp;1"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
-      "methodName": "Test_GetSet",
-      "description": "String var1, String var2;Case:设置value值返回旧的值;Return: 返回给定 key 的旧值",
-      "spendTime": "5ms",
+      "methodName": "Test_pfcount",
+      "description": "pfcount命令。",
+      "spendTime": "8ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;updatevalue"
+        "实际结果:&nbsp;4"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
-      "methodName": "Test_SetRange",
-      "description": "String var1, long var2, String var4;Case:根据给定的偏移量覆盖key存储的value值;Return: 返回字符串的长度",
-      "spendTime": "11ms",
+      "methodName": "Test_setAndCompress",
+      "description": "Param:String var1, String var2;Case:setAndCompress正常调用;Return:返回 OK",
+      "spendTime": "16ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;11"
+        "插入的key值：stringsetAndCompress;value值：null",
+        "预期结果:&nbsp;OK&nbsp;|&nbsp;实际结果:&nbsp;OK"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_setAndCompressUtf8",
+      "description": "Param:String var1, String var2;Case:setAndCompressUtf8正常调用;Return:返回 OK",
+      "spendTime": "9ms",
+      "status": "成功",
+      "log": [
+        "插入的key值：stringsetAndCompressUtf8;value值：null",
+        "预期结果:&nbsp;OK&nbsp;|&nbsp;实际结果:&nbsp;OK"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Setex3",
+      "description": "byte[] var1, int var2, byte[] var3;Case:设置生存时间为60s;Return: OK",
+      "spendTime": "5ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;OK"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_Get",
       "description": "Param:String var1;Case:正常获取到key值;Return: 当 key 不存在时，返回nil,否则，返回 key 的值: 抛异常",
-      "spendTime": "5ms",
+      "spendTime": "19ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;stringvaluestringvalue"
+        "实际结果:&nbsp;stringvalue"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_GetBit",
       "description": "Param:String var1;Case:获取的key值存在 or 不存在;Return: 存在返回1|不存在返回0",
-      "spendTime": "7ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;true&nbsp;|&nbsp;实际结果:&nbsp;true"
@@ -7415,7 +7569,7 @@
       "className": "com.tester.testcase.RedisTestStringCases",
       "methodName": "Test_GetBit",
       "description": "Param:String var1;Case:获取的key值存在 or 不存在;Return: 存在返回1|不存在返回0",
-      "spendTime": "4ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;false&nbsp;|&nbsp;实际结果:&nbsp;false"
@@ -7432,10 +7586,109 @@
       ]
     },
     {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Type",
+      "description": "Param:String var1;Case:返回存储的值的类型;Return:返回 类型",
+      "spendTime": "12ms",
+      "status": "成功",
+      "log": [
+        "key值：stringsetAndCompress;value值：\u0019\u0000\u0000\u0000\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0000+.)��K/N-q�Kq��-(J-.\u000eK�)M\u0005\u0000|S�v\u0019\u0000\u0000\u0000",
+        "预期结果:string&nbsp;|&nbsp;实际结果:&nbsp;string"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "getAndUncompress",
+      "description": "Param:String var1, String var2;Case:getAndUncompress正常调用;Return:返回 OK",
+      "spendTime": "16ms",
+      "status": "成功",
+      "log": [
+        "获取的value值：stringsetAndCompressValue;",
+        "预期结果:&nbsp;stringsetAndCompressValue|&nbsp;实际结果:&nbsp;stringsetAndCompressValue"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "getAndUncompressUtf8",
+      "description": "Param:String var1, String var2;Case:getAndUncompressUtf8正常调用;Return:返回 OK",
+      "spendTime": "6ms",
+      "status": "成功",
+      "log": [
+        "获取的value值：stringsetAndCompressUtf8Value;",
+        "预期结果:&nbsp;stringsetAndCompressUtf8Value|&nbsp;实际结果:&nbsp;stringsetAndCompressUtf8Value"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Exists",
+      "description": "Param:String var1Case:指定key是否存在;Return:存在返回 true 否则 false",
+      "spendTime": "12ms",
+      "status": "成功",
+      "log": [
+        "插入的key值：stringsetAndCompress;value值：\u0019\u0000\u0000\u0000\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0000+.)��K/N-q�Kq��-(J-.\u000eK�)M\u0005\u0000|S�v\u0019\u0000\u0000\u0000",
+        "预期结果:&nbsp;True&nbsp;|&nbsp;实际结果:&nbsp;true"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Expire",
+      "description": "Param:String var1Case:设置key的生存时间;Return:存在返回 true 否则 false",
+      "spendTime": "53ms",
+      "status": "成功",
+      "log": [
+        "key值：keyexpire;value值：Hello",
+        "预期结果:&nbsp;1&nbsp;|&nbsp;实际结果:&nbsp;1"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_ExpireAt",
+      "description": "Param:String var1Case:设置key的生存时间(时间以时间戳传入);Return:存在返回 true 否则 false",
+      "spendTime": "22ms",
+      "status": "成功",
+      "log": [
+        "key值：keyExpireAt;value值：Hello",
+        "预期结果:&nbsp;1&nbsp;|&nbsp;实际结果:&nbsp;1"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Persist",
+      "description": "Param:String var1Case:成功移除key的生存时间;Return:存在返回 true 否则 false",
+      "spendTime": "25ms",
+      "status": "成功",
+      "log": [
+        "key值：stringmykey;value值：Hello",
+        "预期结果:&nbsp;null&nbsp;|&nbsp;实际结果:&nbsp;1"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_Pexpire",
+      "description": "Param:String var1Case:设置key的生存时间毫秒单位;Return:存在返回 true 否则 false",
+      "spendTime": "60ms",
+      "status": "成功",
+      "log": [
+        "key值：keyPexpire;value值：Hello",
+        "预期结果:&nbsp;1&nbsp;|&nbsp;实际结果:&nbsp;1"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestStringCases",
+      "methodName": "Test_ttl",
+      "description": "Param:String var1Case:设置key的生存时间毫秒单位(时间以时间戳传入);Return:存在返回 true 否则 false",
+      "spendTime": "13ms",
+      "status": "成功",
+      "log": [
+        "key值：keyexpire;value值：Hello",
+        "实际结果:&nbsp;10"
+      ]
+    },
+    {
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_BlPop",
       "description": "Param:|String var1, String... var2|</br>Case:|在指定时间内查找弹出的元素|</br>Return:|在指定时间内查找弹出的元素|",
-      "spendTime": "30ms",
+      "spendTime": "11ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;[9p:blpopkey,&nbsp;hello]"
@@ -7455,7 +7708,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LIndex",
       "description": "Param:|String var1, long var2|</br>Case:|下标为0|下标为-1|下标超出区间范围|</br>Return:|返回下标索引处的值|",
-      "spendTime": "11ms",
+      "spendTime": "14ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;listValue|实际结果:&nbsp;listValue"
@@ -7465,7 +7718,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LIndex",
       "description": "Param:|String var1, long var2|</br>Case:|下标为0|下标为-1|下标超出区间范围|</br>Return:|返回下标索引处的值|",
-      "spendTime": "14ms",
+      "spendTime": "11ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;listValue3|实际结果:&nbsp;listValue3"
@@ -7475,7 +7728,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LIndex",
       "description": "Param:|String var1, long var2|</br>Case:|下标为0|下标为-1|下标超出区间范围|</br>Return:|返回下标索引处的值|",
-      "spendTime": "23ms",
+      "spendTime": "14ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;null|实际结果:&nbsp;null"
@@ -7485,7 +7738,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LInsert",
       "description": "Param:|String var1, ListPosition var2, String var3, String var4|</br>Case:|在X值之前插入|在X值之后插入|X值不存在时插入|</br>Return:|插入成功后返回元素数量|插入失败返回0|",
-      "spendTime": "10ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;3|实际结果:&nbsp;3"
@@ -7495,7 +7748,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LInsert",
       "description": "Param:|String var1, ListPosition var2, String var3, String var4|</br>Case:|在X值之前插入|在X值之后插入|X值不存在时插入|</br>Return:|插入成功后返回元素数量|插入失败返回0|",
-      "spendTime": "40ms",
+      "spendTime": "30ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;4|实际结果:&nbsp;4"
@@ -7505,7 +7758,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LInsert",
       "description": "Param:|String var1, ListPosition var2, String var3, String var4|</br>Case:|在X值之前插入|在X值之后插入|X值不存在时插入|</br>Return:|插入成功后返回元素数量|插入失败返回0|",
-      "spendTime": "8ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;-1|实际结果:&nbsp;-1"
@@ -7515,7 +7768,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LInsert",
       "description": "Param:|String var1, ListPosition var2, String var3, String var4|</br>Case:|在X值之前插入|在X值之后插入|X值不存在时插入|</br>Return:|插入成功后返回元素数量|插入失败返回0|",
-      "spendTime": "5ms",
+      "spendTime": "4ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;0|实际结果:&nbsp;0"
@@ -7525,7 +7778,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LPop",
       "description": "Param:|String var1|</br>Case:|移除一个key的头元素|key不存在|</br>Return:|成功返回key的头元素|key不存在返回nil|",
-      "spendTime": "8ms",
+      "spendTime": "7ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;Strat|实际结果:&nbsp;Strat"
@@ -7535,7 +7788,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LPop",
       "description": "Param:|String var1|</br>Case:|移除一个key的头元素|key不存在|</br>Return:|成功返回key的头元素|key不存在返回nil|",
-      "spendTime": "4ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;null|实际结果:&nbsp;null"
@@ -7555,7 +7808,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LPush",
       "description": "Param:|String var1, String... var2|</br>Case:|创建一个值|插入多个值|插入重复值|</br>Return:|插入后返回元素数量|",
-      "spendTime": "27ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;2"
@@ -7565,7 +7818,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LPush",
       "description": "Param:|String var1, String... var2|</br>Case:|创建一个值|插入多个值|插入重复值|</br>Return:|插入后返回元素数量|",
-      "spendTime": "18ms",
+      "spendTime": "4ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;4"
@@ -7585,7 +7838,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LPushx",
       "description": "Param:|String var1, String... var2|</br>Case:|空列表插入值|非空列表插入值|</br>Return:|插入成功后返回元素数量|插入失败返回0|",
-      "spendTime": "6ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;0|实际结果:&nbsp;0"
@@ -7595,7 +7848,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LRem",
       "description": "Param:|String var1, long var2, String var4|</br>Case:|从表头移除count数量的值|从表尾移除count数量的值|count=0移除所有value的值|</br>Return:|返回被移除元素数量|",
-      "spendTime": "9ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;2|实际结果:&nbsp;2"
@@ -7605,7 +7858,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LRem",
       "description": "Param:|String var1, long var2, String var4|</br>Case:|从表头移除count数量的值|从表尾移除count数量的值|count=0移除所有value的值|</br>Return:|返回被移除元素数量|",
-      "spendTime": "14ms",
+      "spendTime": "4ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;1|实际结果:&nbsp;1"
@@ -7615,7 +7868,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LRem",
       "description": "Param:|String var1, long var2, String var4|</br>Case:|从表头移除count数量的值|从表尾移除count数量的值|count=0移除所有value的值|</br>Return:|返回被移除元素数量|",
-      "spendTime": "5ms",
+      "spendTime": "4ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;2|实际结果:&nbsp;2"
@@ -7635,7 +7888,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LTrim",
       "description": "Param:|String var1, long var2, long var4|</br>Case:|移除start和end范围之外的元素|</br>Return:|成功返回OK|",
-      "spendTime": "5ms",
+      "spendTime": "28ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;OK|实际结果:&nbsp;OK"
@@ -7643,9 +7896,19 @@
     },
     {
       "className": "com.tester.testcase.RedisTestListCases",
+      "methodName": "Test_LrangeBytes",
+      "description": "Param:|String key, long start, long end|</br>",
+      "spendTime": "8ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;[]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_RPop",
       "description": "Param:|String var1, String... var2|</br>Case:|弹出末尾元素|key不存在|</br>Return:|key存在返回被弹出的元素|key不存在返回nil",
-      "spendTime": "22ms",
+      "spendTime": "7ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;bar|实际结果:&nbsp;bar"
@@ -7655,7 +7918,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_RPop",
       "description": "Param:|String var1, String... var2|</br>Case:|弹出末尾元素|key不存在|</br>Return:|key存在返回被弹出的元素|key不存在返回nil",
-      "spendTime": "23ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;null|实际结果:&nbsp;null"
@@ -7665,30 +7928,30 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_RPush",
       "description": "Param:|String var1, String... var2|</br>Case:|插入一个值|插入多个值|插入重复值|</br>Return:|插入后返回元素数量|",
+      "spendTime": "5ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;376"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestListCases",
+      "methodName": "Test_RPush",
+      "description": "Param:|String var1, String... var2|</br>Case:|插入一个值|插入多个值|插入重复值|</br>Return:|插入后返回元素数量|",
       "spendTime": "6ms",
       "status": "成功",
       "log": [
-        "|实际结果:&nbsp;86"
+        "|实际结果:&nbsp;377"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_RPush",
       "description": "Param:|String var1, String... var2|</br>Case:|插入一个值|插入多个值|插入重复值|</br>Return:|插入后返回元素数量|",
-      "spendTime": "10ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
-        "|实际结果:&nbsp;87"
-      ]
-    },
-    {
-      "className": "com.tester.testcase.RedisTestListCases",
-      "methodName": "Test_RPush",
-      "description": "Param:|String var1, String... var2|</br>Case:|插入一个值|插入多个值|插入重复值|</br>Return:|插入后返回元素数量|",
-      "spendTime": "9ms",
-      "status": "成功",
-      "log": [
-        "|实际结果:&nbsp;89"
+        "|实际结果:&nbsp;379"
       ]
     },
     {
@@ -7698,14 +7961,14 @@
       "spendTime": "6ms",
       "status": "成功",
       "log": [
-        "|实际结果:&nbsp;90"
+        "|实际结果:&nbsp;380"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_RPushx",
       "description": "Param:|String var1, String... var2|</br>Case:|对存在的key插入值|对不存在的key插入值|</br>Return:|插入成功后返回元素数量|",
-      "spendTime": "8ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "|实际结果:&nbsp;0"
@@ -7715,7 +7978,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LLen",
       "description": "Param:|String var1|</br>Case:|列表非空|列表为空|</br>Return:|列表为空返回0|返回列表元素数量|",
-      "spendTime": "9ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;4|实际结果:&nbsp;4"
@@ -7725,7 +7988,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LLen",
       "description": "Param:|String var1|</br>Case:|列表非空|列表为空|</br>Return:|列表为空返回0|返回列表元素数量|",
-      "spendTime": "27ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;0|实际结果:&nbsp;0"
@@ -7735,7 +7998,7 @@
       "className": "com.tester.testcase.RedisTestListCases",
       "methodName": "Test_LRange",
       "description": "Param:|String var1, long var2, long var4|</br>Case:|start起始位置，end结束位置|</br>Return:|返回给定位置的元素|",
-      "spendTime": "10ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;[go,&nbsp;java,&nbsp;python]"
@@ -7745,7 +8008,7 @@
       "className": "com.tester.testcase.RedisTestSetCases",
       "methodName": "Test_Sadd",
       "description": "Param:|String var1, String var2|</br>Case:|正常将元素插入到集合key中|</br>Return:|返回 1 或者0|",
-      "spendTime": "7ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;4"
@@ -7755,7 +8018,7 @@
       "className": "com.tester.testcase.RedisTestSetCases",
       "methodName": "Test_Sadd",
       "description": "Param:|String var1, String var2|</br>Case:|正常将元素插入到集合key中|</br>Return:|返回 1 或者0|",
-      "spendTime": "13ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;0"
@@ -7775,7 +8038,7 @@
       "className": "com.tester.testcase.RedisTestSetCases",
       "methodName": "Test_Scard",
       "description": "Param:|String var1, String var2|</br>Case:|key存在|key不存在|</br>Return:|返回集合中元素的数量|key不存在时返回 0|",
-      "spendTime": "6ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;0"
@@ -7785,7 +8048,7 @@
       "className": "com.tester.testcase.RedisTestSetCases",
       "methodName": "Test_SisMember",
       "description": "Param:|String var1, String var2|</br>Case:|元素存在|元素不存在|</br>Return:|存在返回true|不存在返回false|",
-      "spendTime": "8ms",
+      "spendTime": "30ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;true;实际结果:&nbsp;true"
@@ -7795,7 +8058,7 @@
       "className": "com.tester.testcase.RedisTestSetCases",
       "methodName": "Test_SisMember",
       "description": "Param:|String var1, String var2|</br>Case:|元素存在|元素不存在|</br>Return:|存在返回true|不存在返回false|",
-      "spendTime": "8ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;false;实际结果:&nbsp;false"
@@ -7805,7 +8068,7 @@
       "className": "com.tester.testcase.RedisTestSetCases",
       "methodName": "Test_Srem",
       "description": "Param:|String var1, String... var2|</br>Case:|移除指定的元素|移除多个元素|</br>Return:|返回被成功移除的元素的数量|",
-      "spendTime": "7ms",
+      "spendTime": "8ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;0"
@@ -7815,7 +8078,7 @@
       "className": "com.tester.testcase.RedisTestSetCases",
       "methodName": "Test_Srem",
       "description": "Param:|String var1, String... var2|</br>Case:|移除指定的元素|移除多个元素|</br>Return:|返回被成功移除的元素的数量|",
-      "spendTime": "6ms",
+      "spendTime": "4ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;0"
@@ -7833,39 +8096,49 @@
     },
     {
       "className": "com.tester.testcase.RedisTestSetCases",
-      "methodName": "Test_Sscan",
-      "description": "Param:|String var1, String var2|</br>Case:|元素存在|元素不存在|</br>Return:|存在返回true|不存在返回false|",
-      "spendTime": "11ms",
+      "methodName": "Test_SrandMember2",
+      "description": "Param:|String var1, int var2|</br>Case: |仅提供key参数|</br>Return:|随机返回一个值|",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;redis.clients.jedis.ScanResult@44a59da3"
+        "实际结果:&nbsp;[setvalue3]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSetCases",
+      "methodName": "Test_Sscan",
+      "description": "Param:|String var1, String var2|</br>Case:|元素存在|元素不存在|</br>Return:|存在返回true|不存在返回false|",
+      "spendTime": "7ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;redis.clients.jedis.ScanResult@50eca7c6"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestSetCases",
       "methodName": "Test_Spop",
       "description": "Param:|String|</br>Case:|随机移除一个元素|</br>Return:|返回被移除的多个元素|返回nil|",
-      "spendTime": "17ms",
+      "spendTime": "7ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;setvalue3"
+        "实际结果:&nbsp;setvalue2"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestSetCases",
       "methodName": "Test_Spop2",
       "description": "Param:|String var1, long var2|</br>Case:|随机移除多个元素|集合不存在|</br>Return:|返回被移除的多个元素|返回nil|",
-      "spendTime": "10ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;[setvalue,&nbsp;setvalue4]"
+        "实际结果:&nbsp;[setvalue3,&nbsp;setvalue]"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZAdd",
       "description": "Param:|String var1, String var2|</br>Case:|正常将元素插入到集合key中|</br>Return:|返回插入后的元素数量|",
-      "spendTime": "15ms",
+      "spendTime": "7ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;3|实际结果:&nbsp;3"
@@ -7875,7 +8148,7 @@
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZAdd2",
       "description": "Param:|String var1, String var2|</br>Case:|正常将元素插入到集合key中|</br>Return:|返回插入后的元素数量|",
-      "spendTime": "5ms",
+      "spendTime": "8ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;1|实际结果:&nbsp;1"
@@ -7885,27 +8158,17 @@
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZCard",
       "description": "Param:|String var1, String var2|</br>Case:|key存在|key不存在|</br>Return:|返回有序集合数量|",
-      "spendTime": "7ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
-        "预期结果:&nbsp;3|实际结果:&nbsp;3"
-      ]
-    },
-    {
-      "className": "com.tester.testcase.RedisTestSortedSetCases",
-      "methodName": "Test_ZCard",
-      "description": "Param:|String var1, String var2|</br>Case:|key存在|key不存在|</br>Return:|返回有序集合数量|",
-      "spendTime": "13ms",
-      "status": "成功",
-      "log": [
-        "预期结果:&nbsp;0|实际结果:&nbsp;0"
+        "预期结果:&nbsp;3|实际结果:&nbsp;6"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZCount",
       "description": "Param:|String key, double min, double max|</br>Case:|计算2000-5000薪水内的人数|</br>Return:|返回min-max范围内的成员数量|",
-      "spendTime": "8ms",
+      "spendTime": "7ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;2|实际结果:&nbsp;2"
@@ -7925,7 +8188,7 @@
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZCount2",
       "description": "Param:|String key, String min, String max|</br>Case:|正常将元素插入到集合key中|</br>Return:|返回插入后的元素数量|",
-      "spendTime": "19ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;3|实际结果:&nbsp;3"
@@ -7935,7 +8198,7 @@
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZIncrBy",
       "description": "Param:|String var1, double var2, String var4|</br>Case:|为成员member增量2000| 为成员member -50</br>Return:|返回增量后的新值|返回减量后的新值",
-      "spendTime": "6ms",
+      "spendTime": "10ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;4000.0|实际结果:&nbsp;4000.0"
@@ -7943,9 +8206,29 @@
     },
     {
       "className": "com.tester.testcase.RedisTestSortedSetCases",
+      "methodName": "Test_ZIncrBy2",
+      "description": "Param:|byte[] key, double value, byte[] name|</br>Case:|为成员member增量2000| 为成员member -50</br>Return:|返回增量后的新值|返回减量后的新值",
+      "spendTime": "8ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;17600.0"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSortedSetCases",
+      "methodName": "Test_ZIncrBy3",
+      "description": "Param:|byte[] var1, double var2, byte[] var4, ZIncrByParams var5|</br>Case:|为成员member增量2000| 为成员member -50</br>Return:|返回增量后的新值|返回减量后的新值",
+      "spendTime": "33ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;null"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZRangeByScore",
       "description": "Param:|String var1, double var2, double var4|</br>Case:|指定区间值|</br>Return:|返回有序的成员集合|",
-      "spendTime": "6ms",
+      "spendTime": "18ms",
       "status": "成功",
       "log": [
         "|实际结果:&nbsp;[xiaoming,&nbsp;xiaohong]"
@@ -7955,7 +8238,7 @@
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZRem",
       "description": "Param:|String var1, String... var2|</br>Case:|移除一个成员|移除过个成员|</br>Return:|返回被成功移除的元素数量|",
-      "spendTime": "19ms",
+      "spendTime": "9ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;1|实际结果:&nbsp;1"
@@ -7965,7 +8248,7 @@
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZRem",
       "description": "Param:|String var1, String... var2|</br>Case:|移除一个成员|移除过个成员|</br>Return:|返回被成功移除的元素数量|",
-      "spendTime": "6ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;2|实际结果:&nbsp;2"
@@ -7985,7 +8268,7 @@
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZRemRangeByScore",
       "description": "Param:|String var1, String var2|</br>Case:|移除指定位置内的成员|</br>Return:|返回被移除的成员数量|",
-      "spendTime": "5ms",
+      "spendTime": "12ms",
       "status": "成功",
       "log": [
         "|实际结果:&nbsp;2"
@@ -7993,9 +8276,19 @@
     },
     {
       "className": "com.tester.testcase.RedisTestSortedSetCases",
+      "methodName": "Test_ZRemRangeByScore3",
+      "description": "Param:|byte[] key, double start, double end|</br>Case:|移除指定位置内的成员|</br>Return:|返回被移除的成员数量|",
+      "spendTime": "7ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;0"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZRevRange",
       "description": "Param:|String var1, long var2, long var4|</br>Case:|倒序输出|</br>Return:|返回成员的结果集|",
-      "spendTime": "9ms",
+      "spendTime": "11ms",
       "status": "成功",
       "log": [
         "|实际结果:&nbsp;[tom,&nbsp;peter,&nbsp;jack]"
@@ -8005,7 +8298,17 @@
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZRevRangeByScore",
       "description": "Param:|String var1, String var2|</br>Case:|倒序输出|</br>Return:|返回成员的结果集|",
-      "spendTime": "5ms",
+      "spendTime": "6ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;[]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSortedSetCases",
+      "methodName": "Test_ZRevRangeByScore3",
+      "description": "Param:|byte[] var1, double var2, double var4|</br>Case:|倒序输出|</br>Return:|返回成员的结果集|",
+      "spendTime": "57ms",
       "status": "成功",
       "log": [
         "|实际结果:&nbsp;[]"
@@ -8015,7 +8318,7 @@
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZRevRank",
       "description": "Param:|String var1, String var2|</br>Case:|对成员进行排名|</br>Return:|返回某个成员的排名|",
-      "spendTime": "8ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "|实际结果:&nbsp;0"
@@ -8025,17 +8328,17 @@
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZScan",
       "description": "Param:|String var1, String var2|</br>Case:|匹配给定值|</br>Return:|返回一个有序集合|",
-      "spendTime": "7ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
-        "|实际结果:&nbsp;redis.clients.jedis.ScanResult@7e19ebf0"
+        "|实际结果:&nbsp;redis.clients.jedis.ScanResult@30ea8c23"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZScore",
       "description": "Param:|String var1, String var2|</br>Case:|正常将元素插入到集合key中|</br>Return:|返回插入后的元素数量|",
-      "spendTime": "17ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "|实际结果:&nbsp;5000.0"
@@ -8043,22 +8346,102 @@
     },
     {
       "className": "com.tester.testcase.RedisTestSortedSetCases",
-      "methodName": "Test_ZRange",
-      "description": "Param:|String var1, long var2, long var4|</br>Case:|指定区间值|</br>Return:|返回有序的成员集合|",
+      "methodName": "Test_ZrangeByLex",
+      "description": "Param:|String var1, String var2|</br>Case:|移除指定位置内的成员|</br>Return:|返回被移除的成员数量|",
+      "spendTime": "5ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;[a,&nbsp;b,&nbsp;c]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSortedSetCases",
+      "methodName": "Test_ZrangeByScoreWithScores",
+      "description": "Param:|String var1, String var2|</br>Case:|倒序输出|</br>Return:|返回成员的结果集|",
+      "spendTime": "6ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;[]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSortedSetCases",
+      "methodName": "Test_ZrangeWithScores",
+      "description": "Param:|String var1, long var2, long var4|</br>Case:|倒序输出|</br>Return:|返回成员的结果集|",
+      "spendTime": "6ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;[[peter,3500.0],&nbsp;[tom,5000.0]]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSortedSetCases",
+      "methodName": "Test_ZrevrangeByLex",
+      "description": "Param:|final String key, final String max, final String min|</br>Case:|移除指定位置内的成员|</br>Return:|返回被移除的成员数量|",
+      "spendTime": "6ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;[]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSortedSetCases",
+      "methodName": "Test_ZrevrangeByLex2",
+      "description": "Param:|final String key, final String max, final String min, final int offset, final int count|</br>Case:|移除指定位置内的成员|</br>Return:|返回被移除的成员数量|",
+      "spendTime": "6ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;[]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSortedSetCases",
+      "methodName": "Test_ZrevrangeByScoreWithScores",
+      "description": "Param:|String var1, String var2|</br>Case:|倒序输出|</br>Return:|返回成员的结果集|",
+      "spendTime": "36ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;[]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSortedSetCases",
+      "methodName": "Test_ZrevrangeWithScores",
+      "description": "Param:|String var1, long var2, long var4|</br>Case:|倒序输出|</br>Return:|返回成员的结果集|",
       "spendTime": "8ms",
       "status": "成功",
       "log": [
-        "|实际结果:&nbsp;[one,&nbsp;two,&nbsp;three]"
+        "|实际结果:&nbsp;[[tom,5000.0],&nbsp;[peter,3500.0]]"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestSortedSetCases",
+      "methodName": "Test_ZRange",
+      "description": "Param:|String var1, long var2, long var4|</br>Case:|指定区间值|</br>Return:|返回有序的成员集合|",
+      "spendTime": "6ms",
+      "status": "成功",
+      "log": [
+        "|实际结果:&nbsp;[one,&nbsp;two,&nbsp;three,&nbsp;jack,&nbsp;peter,&nbsp;tom]"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestSortedSetCases",
       "methodName": "Test_ZRank",
       "description": "Param:|String var1, String var2|</br>Case:|查看一个member的排名|</br>Return:|返回score 的排名|",
-      "spendTime": "7ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "|实际结果:&nbsp;1"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_Hdel2",
+      "description": "Param:|byte[] var1, byte[]... var2|</br>Case:|删除bytekey|</br>Return:|创建返回 1 覆盖返回0|",
+      "spendTime": "5ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;1"
       ]
     },
     {
@@ -8075,7 +8458,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hexists",
       "description": "Param:|String var1, String var2|</br>Case:|字段存在|key不存在|字段不存在|</br>Return:|存在返回true|key不存在返回false|字段不存在返回false|",
-      "spendTime": "5ms",
+      "spendTime": "4ms",
       "status": "成功",
       "log": [
         "hash_key_not_existorhashname2不存在||实际结果:&nbsp;false"
@@ -8095,7 +8478,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_HgetAll",
       "description": "Param:|String var1|</br>Case:|key存在|key不存在|</br>Return:|存在返回所有字段及字段值|不存在返回空列表|",
-      "spendTime": "8ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;{hexistsname=hexistsValue}"
@@ -8105,10 +8488,40 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_HgetAll",
       "description": "Param:|String var1|</br>Case:|key存在|key不存在|</br>Return:|存在返回所有字段及字段值|不存在返回空列表|",
-      "spendTime": "4ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;{}"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_HgetAll2",
+      "description": "Param:|String var1|</br>Case:|key存在|key不存在|</br>Return:|存在返回所有字段及字段值|不存在返回空列表|",
+      "spendTime": "7ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;redis.clients.jedis.util.JedisByteHashMap@1d9bec4d"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_HgetAllMSBytes",
+      "description": "Param:|String var1|</br>Case:|key存在|key不存在|</br>Return:|存在返回所有字段及字段值|不存在返回空列表|",
+      "spendTime": "5ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;{hexistsname=[B@5fb97279}"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_HgetBytes",
+      "description": "Param:|String key,String field|</br>",
+      "spendTime": "38ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;null"
       ]
     },
     {
@@ -8125,7 +8538,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_HincrBy",
       "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|increment为正数200|increment为负数50|</br>Return:|创建相加后的值|返回减去50后的值|",
-      "spendTime": "24ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;150&nbsp;|实际结果:&nbsp;150"
@@ -8135,7 +8548,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_HincrByFloat",
       "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|传入小数|传入指数符号|key不存在|key存在字段不存在|</br>Return:|返回相加后的值|",
-      "spendTime": "8ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;200.0&nbsp;|实际结果:&nbsp;200.0"
@@ -8145,7 +8558,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_HincrByFloat",
       "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|传入小数|传入指数符号|key不存在|key存在字段不存在|</br>Return:|返回相加后的值|",
-      "spendTime": "9ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;10.5&nbsp;|实际结果:&nbsp;10.5"
@@ -8153,9 +8566,19 @@
     },
     {
       "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_HincrByFloat2",
+      "description": "Param:|final byte[] key, final byte[] field, final double value|</br>Case:|传入小数|传入指数符号|key不存在|key存在字段不存在|</br>Return:|返回相加后的值|",
+      "spendTime": "7ms",
+      "status": "成功",
+      "log": [
+        "&nbsp;|实际结果:&nbsp;3800.0"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hkeys",
       "description": "Param:|String var1|</br>Case:|key存在|key不存在</br>Return:|返回所有字段|返回nil|",
-      "spendTime": "9ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;[]"
@@ -8165,7 +8588,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hkeys",
       "description": "Param:|String var1|</br>Case:|key存在|key不存在</br>Return:|返回所有字段|返回nil|",
-      "spendTime": "4ms",
+      "spendTime": "7ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;[]"
@@ -8175,7 +8598,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hmget",
       "description": "Param:|String var1, String... var2|</br>Case:|在key中给定一个存在的字段|在key给定一个不存在的字段|</br>Return:|创建返回key中的一个字段值|字段不存在返回nil|",
-      "spendTime": "8ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;[www.google.com]"
@@ -8185,7 +8608,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hmget",
       "description": "Param:|String var1, String... var2|</br>Case:|在key中给定一个存在的字段|在key给定一个不存在的字段|</br>Return:|创建返回key中的一个字段值|字段不存在返回nil|",
-      "spendTime": "4ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;[www.yahoo.com,&nbsp;www.google.com]"
@@ -8205,7 +8628,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hmset",
       "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|插入多个字段|重复插入字段</br>Return:|创建返回 OK| 返回OK将替换旧值|",
-      "spendTime": "9ms",
+      "spendTime": "7ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;OK|实际结果:&nbsp;OK"
@@ -8215,7 +8638,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hmset",
       "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|插入多个字段|重复插入字段</br>Return:|创建返回 OK| 返回OK将替换旧值|",
-      "spendTime": "6ms",
+      "spendTime": "10ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;OK|实际结果:&nbsp;OK"
@@ -8223,12 +8646,22 @@
     },
     {
       "className": "com.tester.testcase.RedisTestHashCases",
-      "methodName": "Test_Hset",
-      "description": "Param:|String var1, String var2, String var3|</br>Case:|创建一个哈希表|覆盖哈希表中的旧值</br>Return:|创建返回 1 覆盖返回0|",
-      "spendTime": "6ms",
+      "methodName": "Test_HmsetBytes",
+      "description": "Param:|String key,String field|</br>",
+      "spendTime": "9ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;1"
+        "实际结果:&nbsp;OK"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_Hmsetex",
+      "description": "Param:|String key,String field|</br>",
+      "spendTime": "17ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;OK"
       ]
     },
     {
@@ -8245,7 +8678,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hset",
       "description": "Param:|String var1, String var2, String var3|</br>Case:|创建一个哈希表|覆盖哈希表中的旧值</br>Return:|创建返回 1 覆盖返回0|",
-      "spendTime": "25ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;1"
@@ -8258,14 +8691,14 @@
       "spendTime": "6ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;0"
+        "实际结果:&nbsp;1"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestHashCases",
-      "methodName": "Test_Hset2",
-      "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|创建一个哈希表|覆盖哈希表中的旧值</br>Return:|创建返回 1 覆盖返回0|",
-      "spendTime": "16ms",
+      "methodName": "Test_Hset",
+      "description": "Param:|String var1, String var2, String var3|</br>Case:|创建一个哈希表|覆盖哈希表中的旧值</br>Return:|创建返回 1 覆盖返回0|",
+      "spendTime": "4ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;0"
@@ -8275,7 +8708,37 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hset2",
       "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|创建一个哈希表|覆盖哈希表中的旧值</br>Return:|创建返回 1 覆盖返回0|",
-      "spendTime": "12ms",
+      "spendTime": "9ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;0"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_Hset2",
+      "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|创建一个哈希表|覆盖哈希表中的旧值</br>Return:|创建返回 1 覆盖返回0|",
+      "spendTime": "5ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;0"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_Hset3",
+      "description": "Param:|byte[] key, byte[] name, byte[] value2|</br>Case:|创建一个哈希表|覆盖哈希表中的旧值</br>Return:|创建返回 1 覆盖返回0|",
+      "spendTime": "5ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;1"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_Hset4",
+      "description": "Param:|byte[] key, byte[] name, byte[] value2|</br>Case:|创建一个哈希表|覆盖哈希表中的旧值</br>Return:|创建返回 1 覆盖返回0|",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;0"
@@ -8295,7 +8758,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hvals",
       "description": "Param:|String var1|</br>Case:|key存在|key不存在</br>Return:|返回所有数据|返回nil|",
-      "spendTime": "5ms",
+      "spendTime": "4ms",
       "status": "成功",
       "log": [
         "实际结果:&nbsp;[]"
@@ -8305,7 +8768,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hget",
       "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|获取指定字段的值|指定字段不存在|key不存在|</br>Return:|存在返回字段值|不存在返回nil|返回nil|",
-      "spendTime": "5ms",
+      "spendTime": "7ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;hashValue3|实际结果:&nbsp;hashValue3"
@@ -8315,7 +8778,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hget",
       "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|获取指定字段的值|指定字段不存在|key不存在|</br>Return:|存在返回字段值|不存在返回nil|返回nil|",
-      "spendTime": "10ms",
+      "spendTime": "38ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;null|实际结果:&nbsp;null"
@@ -8325,7 +8788,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hget",
       "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|获取指定字段的值|指定字段不存在|key不存在|</br>Return:|存在返回字段值|不存在返回nil|返回nil|",
-      "spendTime": "7ms",
+      "spendTime": "9ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;null|实际结果:&nbsp;null"
@@ -8335,7 +8798,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hlen",
       "description": "Param:|String var1|</br>Case:|正确返回字段的数量|key不存在</br>Return:|返回哈希表key中字段的数量|返回0|",
-      "spendTime": "8ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;3|实际结果:&nbsp;3"
@@ -8345,7 +8808,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hlen",
       "description": "Param:|String var1|</br>Case:|正确返回字段的数量|key不存在</br>Return:|返回哈希表key中字段的数量|返回0|",
-      "spendTime": "33ms",
+      "spendTime": "5ms",
       "status": "成功",
       "log": [
         "预期结果:&nbsp;0|实际结果:&nbsp;0"
@@ -8355,17 +8818,57 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hscan",
       "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|获取所有元素数量|</br>Return:|返回所有元素|",
-      "spendTime": "19ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
-        "实际结果:&nbsp;redis.clients.jedis.ScanResult@59cba5a"
+        "实际结果:&nbsp;redis.clients.jedis.ScanResult@b91d8c4"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_Hscan2",
+      "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|获取所有元素数量|</br>Return:|返回所有元素|",
+      "spendTime": "6ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;redis.clients.jedis.ScanResult@a1217f9"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_Hscan3",
+      "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|获取所有元素数量|</br>Return:|返回所有元素|",
+      "spendTime": "6ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;redis.clients.jedis.ScanResult@2baa8d82"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_Hscan4",
+      "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|获取所有元素数量|</br>Return:|返回所有元素|",
+      "spendTime": "8ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;redis.clients.jedis.ScanResult@372ea2bc"
+      ]
+    },
+    {
+      "className": "com.tester.testcase.RedisTestHashCases",
+      "methodName": "Test_Hscan5",
+      "description": "Param:|String var1, String var2, byte[] var3|</br>Case:|获取所有元素数量|</br>Return:|返回所有元素|",
+      "spendTime": "5ms",
+      "status": "成功",
+      "log": [
+        "实际结果:&nbsp;redis.clients.jedis.ScanResult@7ef2d7a6"
       ]
     },
     {
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hdel",
       "description": "Param:|String var1, String... var2|</br>Case:|删除一个字段|删除2个字段|删除不存在的字段|</br>Return:|返回1|返回2|返回0|",
-      "spendTime": "11ms",
+      "spendTime": "6ms",
       "status": "成功",
       "log": [
         "删除一个字段成功:&nbsp;1"
@@ -8375,7 +8878,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hdel",
       "description": "Param:|String var1, String... var2|</br>Case:|删除一个字段|删除2个字段|删除不存在的字段|</br>Return:|返回1|返回2|返回0|",
-      "spendTime": "8ms",
+      "spendTime": "62ms",
       "status": "成功",
       "log": [
         "删除两个字段成功:&nbsp;2"
@@ -8385,7 +8888,7 @@
       "className": "com.tester.testcase.RedisTestHashCases",
       "methodName": "Test_Hdel",
       "description": "Param:|String var1, String... var2|</br>Case:|删除一个字段|删除2个字段|删除不存在的字段|</br>Return:|返回1|返回2|返回0|",
-      "spendTime": "5ms",
+      "spendTime": "10ms",
       "status": "成功",
       "log": [
         "删除不存在的字段：0"
@@ -8393,7 +8896,7 @@
     }
   ],
   "testFail": 0,
-  "testName": "20200831152922018"
+  "testName": "20201112153346325"
 };
 
     function clickRow(obj){

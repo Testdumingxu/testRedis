@@ -111,6 +111,19 @@ public class RedisTestSetCases {
         Reporter.log("实际结果: " + result);
     }
 
+    @Test(description = "Param:|String var1, int var2|</br>" +
+            "Case: |仅提供key参数|</br>" +
+            "Return:|随机返回一个值|",
+            dependsOnMethods = {"Test_Sadd"},
+            dataProvider = "Set_all",
+            dataProviderClass = com.tester.data.TestSetData.class)
+    public void Test_SrandMember2(String key, int count) {
+        Object result = null;
+        result = bean.srandmember(key, count);
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+    }
+
     @Test(description = "Param:|String var1, String... var2|</br>" +
             "Case:|移除指定的元素|移除多个元素|</br>" +
             "Return:|返回被成功移除的元素的数量|",
@@ -132,7 +145,9 @@ public class RedisTestSetCases {
             dataProviderClass = com.tester.data.TestSetData.class)
     public void Test_Sscan(String key) {
         ScanResult result = bean.sscan(key, "0");
+
         Assert.assertNotNull(result);
         Reporter.log("实际结果: " + result);
     }
+
 }

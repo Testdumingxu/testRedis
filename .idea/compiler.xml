@@ -9,8 +9,5 @@
         <module name="testredis" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="testredis" target="6" />
-    </bytecodeTargetLevel>
   </component>
 </project>

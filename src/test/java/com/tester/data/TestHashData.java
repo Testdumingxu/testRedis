@@ -1,9 +1,11 @@
 package com.tester.data;
 
 import org.testng.annotations.DataProvider;
+import redis.clients.jedis.ScanParams;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * RedisTestStringCases测试数据
@@ -43,6 +45,36 @@ public class TestHashData {
                     // 将旧值覆盖,值为byte[]
                     {"hashkey2", "hashname", var2}
             };
+        } else if (methodName.equals("Test_Hset3")) {
+            // 创建一个byte数组
+            byte[] var = new byte[3];
+            var[0] = 20;
+            var[1] = 40;
+            var[2] = 60;
+            // 新的byte[]覆盖上面的值
+            byte[] var2 = var;
+            var2[0] += 1;
+            var2[1] += 1;
+            var2[2] += 1;
+            return new Object[][]{
+                    // 测试数据 创建一个hash表key为hashkey,值为byte[]
+                    {var, var2, var}
+            };
+        } else if (methodName.equals("Test_Hset4")) {
+            // 创建一个byte数组
+            byte[] var = new byte[3];
+            var[0] = 20;
+            var[1] = 40;
+            var[2] = 60;
+            byte[] var2 = {10};
+            byte[] var3 = {20};
+            Map<byte[],byte[]> map = new HashMap<byte[], byte[]>();
+            map.put(var2, var3);
+
+            return new Object[][]{
+                    // 测试数据 创建一个hash表key为hashkey,值为byte[]
+                    {var, map}
+            };
         } else if (methodName.equals("Test_Hexists")) {
             return new Object[][]{
                     // 测试数据 hashname字段存在
@@ -58,6 +90,21 @@ public class TestHashData {
                     {"hexistskey"},
                     // key不存在
                     {"hash_key_not_exist"}
+            };
+        } else if (methodName.equals("Test_HgetAllMSBytes")) {
+            return new Object[][]{
+                    // 测试数据 hashkey存在
+                    {"hexistskey"}
+            };
+        } else if (methodName.equals("Test_HgetAll2")) {
+            byte[] key = new byte[3];
+            key[0] = 1;
+            key[1] = 2;
+            key[2] = 3;
+
+            return new Object[][]{
+                    // 测试数据 hashkey存在
+                    {key}
             };
         } else if (methodName.equals("Test_Hkeys")) {
             return new Object[][]{
@@ -97,6 +144,15 @@ public class TestHashData {
                     {"hashkey22", "hashname22", 2.0e2, 200.0},
                     // 传入小数
                     {"hashkey33", "hashname33", 10.50, 10.5}
+            };
+        } else if (methodName.equals("Test_HincrByFloat2")) {
+            byte[] var = {10, 20};
+            byte[] var2 = {30, 40};
+
+            return new Object[][]{
+                    // 测试数据 传入指数符号
+                    {var, var2, 200.00},
+
             };
         } else if (methodName.equals("Test_Hlen")) {
             return new Object[][]{
@@ -153,10 +209,70 @@ public class TestHashData {
                     // 删除不存在的字段
                     {"hashkey", "hash_not_exist"}
             };
+        } else if (methodName.equals("Test_Hdel2")) {
+            // 创建一个byte数组
+            byte[] var = new byte[3];
+            var[0] = 20;
+            var[1] = 40;
+            var[2] = 60;
+            // 新的byte[]覆盖上面的值
+            byte[] var2 = var;
+            var2[0] += 1;
+            var2[1] += 1;
+            var2[2] += 1;
+            return new Object[][]{
+                    // 测试数据 创建一个hash表key为hashkey,值为byte[]
+                    {var, var2}
+            };
         } else if (methodName.equals("Test_Hscan")) {
             return new Object[][]{
                     // 测试数据 删除hashname字段
                     {"hashkey", "1"}
+            };
+        } else if (methodName.equals("Test_Hscan2")) {
+            return new Object[][]{
+                    // 测试数据 删除hashname字段
+                    {"hashkey", "1", 1}
+            };
+        } else if (methodName.equals("Test_Hscan3")) {
+            return new Object[][]{
+                    // 测试数据 删除hashname字段
+                    {"hashkey", "1"}
+            };
+        } else if (methodName.equals("Test_Hscan4")) {
+            byte[] b = {20,40};
+            byte[] b1 = {0, 1};
+            return new Object[][]{
+                    // 测试数据 删除hashname字段
+                    {b, b1}
+            };
+        } else if (methodName.equals("Test_Hscan5")) {
+            byte[] b = {20,40};
+            byte[] b1 = {0, 1};
+            ScanParams scanParams = new ScanParams();
+            return new Object[][]{
+                    // 测试数据 删除hashname字段
+                    {b, b1, scanParams}
+            };
+        } else if (methodName.equals("Test_HgetBytes")) {
+            return new Object[][]{
+                    // 测试数据 删除hashname字段
+                    {"HgetBytes", "HgetBytesfield"}
+            };
+        } else if (methodName.equals("Test_HmsetBytes")) {
+            Map<String, byte[]> map = new HashMap<String, byte[]>();
+            byte[] bytes = new byte[] {1,2,3};
+            map.put("HmsetBytesHash", bytes);
+            return new Object[][]{
+                    // 测试数据 删除hashname字段
+                    {"HmsetBytes", map}
+            };
+        } else if (methodName.equals("Test_Hmsetex")) {
+            Map<String, String> map = new HashMap<String, String>();
+            map.put("HmsetexHash", "HmsetexHash2");
+            return new Object[][]{
+                    // 测试数据 删除hashname字段
+                    {"HmsetBytes", map, 10}
             };
         } else if (methodName.equals("Test_Hvals")) {
             return new Object[][]{

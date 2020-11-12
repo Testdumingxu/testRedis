@@ -99,15 +99,15 @@
         </dependency>
 
         <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>3.0.5-SNAPSHOT</version>
+            <groupId>redis.gcache</groupId>
+            <artifactId>gcache</artifactId>
+            <version>3.0.8.0.1-snapshot</version>
         </dependency>
 
         <dependency>
-            <groupId>redis.gcache</groupId>
-            <artifactId>gcache</artifactId>
-            <version>3.0.5-SNAPSHOT</version>
+            <groupId>com.dianping.cat</groupId>
+            <artifactId>cat-client</artifactId>
+            <version>3.0.0.2</version>
         </dependency>
 
         <dependency>

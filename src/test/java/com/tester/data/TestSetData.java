@@ -33,6 +33,8 @@ public class TestSetData {
             };
         } else if (methodName.equals("Test_SrandMember")) {
             return new Object[][]{ {"setkey"} }; // 测试数据 随机返回setkey中的元素值
+        } else if (methodName.equals("Test_SrandMember2")) {
+            return new Object[][]{ {"setkey", 1} }; // 测试数据 随机返回setkey中的元素值
         } else if (methodName.equals("Test_Srem")) {
             return new Object[][]{
                     // 测试数据 移除set_sremtest下面的srem1

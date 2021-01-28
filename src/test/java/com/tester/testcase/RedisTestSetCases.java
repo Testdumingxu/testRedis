@@ -24,7 +24,7 @@ public class RedisTestSetCases {
     @BeforeClass
     public void beforeClass() {
         System.out.println("--------开始执行set用例--------");
-        ClassPathXmlApplicationContext app = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+        ClassPathXmlApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");
         bean = (Gcache) app.getBean("testGcache");
     }
 

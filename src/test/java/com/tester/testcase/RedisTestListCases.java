@@ -20,7 +20,7 @@ public class RedisTestListCases {
      */
     @BeforeClass
     public void beforeClass() {
-        ClassPathXmlApplicationContext app = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+        ClassPathXmlApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");
         bean = (Gcache) app.getBean("testGcache");
 
         System.out.println("--------开始准备测试数据用例--------");

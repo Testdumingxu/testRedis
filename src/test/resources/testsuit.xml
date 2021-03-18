@@ -12,6 +12,7 @@
                     <include name="set"/>
                     <include name="sortedset"/>
                     <include name="hash"/>
+                    <include name="script"/>
                 </run>
             </groups>
             <!--以下是导入的测试类-->
@@ -20,6 +21,7 @@
             <class name="com.tester.testcase.RedisTestSetCases"/>
             <class name="com.tester.testcase.RedisTestSortedSetCases"/>
             <class name="com.tester.testcase.RedisTestHashCases"/>
+            <class name="com.tester.testcase.RedisTestScriptCase"/>
         </classes>
     </test>
     <!--监听器-->

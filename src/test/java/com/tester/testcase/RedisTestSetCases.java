@@ -11,6 +11,7 @@ import redis.clients.jedis.ScanResult;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 @Test(groups = "set")
@@ -141,7 +142,6 @@ public class RedisTestSetCases {
             "Case:|元素存在|元素不存在|</br>" +
             "Return:|存在返回true|不存在返回false|",
             dataProvider = "Set_all",
-            dependsOnMethods = {"Test_Sadd"},
             dataProviderClass = com.tester.data.TestSetData.class)
     public void Test_Sscan(String key) {
         ScanResult result = bean.sscan(key, "0");
@@ -149,5 +149,28 @@ public class RedisTestSetCases {
         Assert.assertNotNull(result);
         Reporter.log("实际结果: " + result);
     }
+
+    /**
+     * 该命令为6.2以上版本的命令
+     * 目前集群版本为6.0
+     * @param key
+     * @param members
+     */
+//    @Test(description = "Param:|final String key, final String... members|</br>" +
+//            "Case:|smisMember命令用来检查给定的 member 是不是特定集合的成员|</br>" +
+//            "Return:|member 是集合成员返回 1|否则 0|",
+//            dataProvider = "Set_all",
+//            dataProviderClass = com.tester.data.TestSetData.class)
+//    public void Test_smisMember(final String key, final String... members) {
+//        bean.sadd(key, members);
+//        List<Boolean> result = bean.smismember(key, members);
+//
+//        System.out.println("----------");
+//        System.out.println(result);
+//        System.out.println("----------");
+//
+//        Assert.assertNotNull(result);
+//        Reporter.log("实际结果: " + result);
+//    }
 
 }

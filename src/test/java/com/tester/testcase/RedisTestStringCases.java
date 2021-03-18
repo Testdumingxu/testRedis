@@ -549,12 +549,28 @@ public class RedisTestStringCases {
             dataProvider = "String_all",
             dataProviderClass = com.tester.data.TestStringData.class)
     public void Test_GetBytes(String key) {
+        byte[] bytes = {10,20};
+        Long result2 = bean.setnx(key.getBytes(), bytes);
+        System.out.println(">>>> " + result2);
         byte[] result = bean.getBytes(key);
-        Assert.assertNotNull(result);
+        System.out.println("结果 " + result);
+//        Assert.assertNotNull(result);
         Reporter.log("实际结果: " + result);
 
     }
 
+    @Test(description = "final String key, final String... arguments",
+            dataProvider = "String_all",
+            dataProviderClass = com.tester.data.TestStringData.class)
+    public void Test_bitfieldReadonly(final String key, final String... arguments) {
+        bean.set(key, "a");
+        List<Long> result = bean.bitfieldReadonly(key, arguments);
+        System.out.println("----------");
+        System.out.println(result);
+        System.out.println("----------");
+        Assert.assertNotNull(result);
+        bean.del(key);
+        Reporter.log("实际结果: " + result);
 
-
+    }
 }

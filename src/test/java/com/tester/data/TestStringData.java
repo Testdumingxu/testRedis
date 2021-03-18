@@ -210,8 +210,13 @@ public class TestStringData {
                     // 测试数据 stringsetbit: 字符串,01100001: 二进制, "1"：偏移量
                     {var, 60, var2}
             };
-        }  else {
-            return null;
+        } else if (methodName.equals("Test_bitfieldReadonly")) {
+            String[] a = {"get","i8","0"};
+            return new Object[][]{
+                    {"test", a}
+            };
+        } else {
+            return new Object[][]{{}};
         }
     }
 }

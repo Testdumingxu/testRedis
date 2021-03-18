@@ -118,8 +118,23 @@ public class TestListData {
                     {"listkey4", ListPosition.AFTER, "Value_not_exist", "python", -1L},
                     {"listkey_no", ListPosition.BEFORE, "Value_not_exist", "python", 0L},
             };
+        } else if (methodName.equals("Test_lPos01")) {
+            return new Object[][]{
+                    // 测试数据 返回索引处的值
+                    {"mylist", "c"}
+            };
+        } else if (methodName.equals("Test_lPos02")) {
+            return new Object[][]{
+                    // 测试数据 返回索引处的值
+                    {"mylist", "c"}
+            };
+        } else if (methodName.equals("Test_lPos03")) {
+            return new Object[][]{
+                    // 测试数据 返回索引处的值
+                    {"mylist", "c"}
+            };
         } else {
-            return null;
+            return new Object[][]{{}};
         }
     }
 }

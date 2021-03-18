@@ -54,10 +54,13 @@ public class TestSetData {
                     // 测试数据 setkey：key存在  set_null：key不存在
                     {"setkey"}, {"set_null"}
             };
-        }else if (methodName.equals("Test_Sscan")) {
+        } else if (methodName.equals("Test_Sscan")) {
             return new Object[][]{ {"setkey"} }; // 测试数据 随机移除setkey中的一个元素
+        } else if (methodName.equals("Test_smisMember")) {
+            String[] members = {"one", "two"};
+            return new Object[][]{ {"myset", members} };
         } else {
-            return null;
+            return new Object[][]{{}};
         }
     }
 }

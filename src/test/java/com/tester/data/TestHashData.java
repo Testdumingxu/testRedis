@@ -282,7 +282,7 @@ public class TestHashData {
                     {"absencekey"}
             };
         } else {
-            return null;
+            return new Object[][]{{}};
         }
     }
 }

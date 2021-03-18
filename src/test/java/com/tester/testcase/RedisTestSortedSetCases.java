@@ -15,6 +15,7 @@ import redis.clients.jedis.params.ZIncrByParams;
 
 import javax.annotation.Resource;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -47,47 +48,47 @@ public class RedisTestSortedSetCases {
         bean.zadd("zrevrank", map);
         bean.zadd("zscankey", map);
         bean.zadd("zscorekey", map);
-        bean.zadd("zrangeWithScoreskey",map);
-        bean.zadd("zrevrangeWithScores",map);
-        bean.zadd("Zlexcountkey",map);
-        bean.zadd("ZrangeWithScores",map);
-        bean.zadd("ZrevrangeByLexkey",map);
-        bean.zadd("zaddkey",map);
-        bean.zadd("ZrevrangeWithScoreskey",map);
+        bean.zadd("zrangeWithScoreskey", map);
+        bean.zadd("zrevrangeWithScores", map);
+        bean.zadd("Zlexcountkey", map);
+        bean.zadd("ZrangeWithScores", map);
+        bean.zadd("ZrevrangeByLexkey", map);
+        bean.zadd("zaddkey", map);
+        bean.zadd("ZrevrangeWithScoreskey", map);
 
-        byte[] ZRangeByScore2key = {10};
-        byte[] ZRangeByScore2name = {20};
-        byte[] ZRangeByScore2name2 = {30};
-        byte[] ZRangeByScore2name3 = {40};
+//        byte[] ZRangeByScore2key = {10};
+//        byte[] ZRangeByScore2name = {20};
+//        byte[] ZRangeByScore2name2 = {30};
+//        byte[] ZRangeByScore2name3 = {40};
 
-        bean.zadd(ZRangeByScore2key, 2000, ZRangeByScore2name);
-        bean.zadd(ZRangeByScore2key, 5000, ZRangeByScore2name2);
-        bean.zadd(ZRangeByScore2key, 12000, ZRangeByScore2name3);
+//        bean.zadd(ZRangeByScore2key, 2000, ZRangeByScore2name);
+//        bean.zadd(ZRangeByScore2key, 5000, ZRangeByScore2name2);
+//        bean.zadd(ZRangeByScore2key, 12000, ZRangeByScore2name3);
 
-        byte[] ZRangeByScore4key = {10};
-        byte[] ZRangeByScore4name = {21};
-        byte[] ZRangeByScore4name2 = {22};
-        byte[] ZRangeByScore4name3 = {23};
+//        byte[] ZRangeByScore4key = {10};
+//        byte[] ZRangeByScore4name = {21};
+//        byte[] ZRangeByScore4name2 = {22};
+//        byte[] ZRangeByScore4name3 = {23};
+//
+//        bean.zadd(ZRangeByScore4key, 2000, ZRangeByScore4name);
+//        bean.zadd(ZRangeByScore4key, 5000, ZRangeByScore4name2);
+//        bean.zadd(ZRangeByScore4key, 12000, ZRangeByScore4name3);
 
-        bean.zadd(ZRangeByScore4key, 2000, ZRangeByScore4name);
-        bean.zadd(ZRangeByScore4key, 5000, ZRangeByScore4name2);
-        bean.zadd(ZRangeByScore4key, 12000, ZRangeByScore4name3);
+//        byte[] ZIncrBy2Key = {20};
+//        byte[] ZIncrBy2name = {30};
+//        byte[] ZIncrBy3name = {60};
+//        byte[] ZIncrBy4name = {90};
+//        bean.zadd(ZIncrBy2Key, 2200.0, ZIncrBy2name);
+//        bean.zadd(ZIncrBy2Key, 2300.0, ZIncrBy3name);
+//        bean.zadd(ZIncrBy2Key, 2400.0, ZIncrBy4name);
 
-        byte[] ZIncrBy2Key = {20};
-        byte[] ZIncrBy2name = {30};
-        byte[] ZIncrBy3name = {60};
-        byte[] ZIncrBy4name = {90};
-        bean.zadd(ZIncrBy2Key,2200.0, ZIncrBy2name);
-        bean.zadd(ZIncrBy2Key,2300.0, ZIncrBy3name);
-        bean.zadd(ZIncrBy2Key,2400.0, ZIncrBy4name);
-
-        byte[] ZIncrBy3Key = {30};
-        byte[] ZIncrByname1 = {40};
-        byte[] ZIncrByname2 = {80};
-        byte[] ZIncrByname3 = {120};
-        bean.zadd(ZIncrBy3Key,2300.0, ZIncrByname1);
-        bean.zadd(ZIncrBy3Key,2400.0, ZIncrByname2);
-        bean.zadd(ZIncrBy3Key,2500.0, ZIncrByname3);
+//        byte[] ZIncrBy3Key = {30};
+//        byte[] ZIncrByname1 = {40};
+//        byte[] ZIncrByname2 = {80};
+//        byte[] ZIncrByname3 = {120};
+//        bean.zadd(ZIncrBy3Key, 2300.0, ZIncrByname1);
+//        bean.zadd(ZIncrBy3Key, 2400.0, ZIncrByname2);
+//        bean.zadd(ZIncrBy3Key, 2500.0, ZIncrByname3);
 
         Map<String, Double> zincrby_map = new HashMap<String, Double>();
         zincrby_map.put("tom", 2000.0);
@@ -95,17 +96,17 @@ public class RedisTestSortedSetCases {
         bean.zadd("zcountkey", map);
         bean.zadd("zincrbykey", zincrby_map);
         Map<String, Double> zrangeByLex_map = new HashMap<String, Double>();
-        zrangeByLex_map.put("a",1.00);
-        zrangeByLex_map.put("b",1.00);
-        zrangeByLex_map.put("c",1.00);
+        zrangeByLex_map.put("a", 1.00);
+        zrangeByLex_map.put("b", 1.00);
+        zrangeByLex_map.put("c", 1.00);
 
-        byte[] ZIncrByKey2 = {10};
-        byte[] ZIncrByValue2 = {20};
-        bean.zadd(ZIncrByKey2, 10.00, ZIncrByValue2);
-
-        bean.zadd("zrangeByLexkey",zrangeByLex_map);
-
-        bean.zadd("ZrevrangeByLexkey_map", zrangeByLex_map);
+//        byte[] ZIncrByKey2 = {10};
+//        byte[] ZIncrByValue2 = {20};
+//        bean.zadd(ZIncrByKey2, 10.00, ZIncrByValue2);
+//
+//        bean.zadd("zrangeByLexkey", zrangeByLex_map);
+//
+//        bean.zadd("ZrevrangeByLexkey_map", zrangeByLex_map);
     }
 
     @AfterClass
@@ -210,8 +211,8 @@ public class RedisTestSortedSetCases {
             "Return:|返回增量后的新值|返回减量后的新值",
             dataProvider = "SortedSet_all",
             dataProviderClass = com.tester.data.TestSortedSetData.class)
-    public void Test_ZIncrBy2(byte[] key, double value, byte[] name) {
-        Double result = bean.zincrby(key, value, name);
+    public void Test_ZIncrBy2(String key, double value, byte[] name) {
+        Double result = bean.zincrby(key.getBytes(), value, name);
         Assert.assertNotNull(result);
         Reporter.log("|实际结果: " + result);
     }
@@ -221,9 +222,13 @@ public class RedisTestSortedSetCases {
             "Return:|返回增量后的新值|返回减量后的新值",
             dataProvider = "SortedSet_all",
             dataProviderClass = com.tester.data.TestSortedSetData.class)
-    public void Test_ZIncrBy3(byte[] key, double value, byte[] name, ZIncrByParams var5) {
-        Double result = bean.zincrby(key, value, name, var5.nx());
-        Assert.assertNull(result);
+    public void Test_ZIncrBy3() {
+//        Double result = bean.zincrby(key.getBytes(), value, name.getBytes(), new ZIncrByParams().nx());
+        String bt = "testkey";
+        String name2 = "1000";
+
+        Double result = bean.zincrby(bt.getBytes(), 2000.0, name2.getBytes(), new ZIncrByParams().nx());
+//        Assert.assertNull(result);
         Reporter.log("|实际结果: " + result);
     }
 
@@ -636,4 +641,108 @@ public class RedisTestSortedSetCases {
         Assert.assertNotNull(result);
         Reporter.log("|实际结果: " + result);
     }
+
+    /**
+     * 该命令为6.2版本
+     * 目前集群为6.0不支持此命令
+     */
+//    @Test(description = "Param:|final String key, final String... members|</br>" +
+//            "Case:|zmscore命令|</br>" +
+//            "Return:|member成员的score值|",
+//            dataProvider = "SortedSet_all",
+//            dataProviderClass = com.tester.data.TestSortedSetData.class)
+//    public void Test_zmscore(final String key, final String... members) {
+//        Map<String, Double> map = new HashMap<>();
+//        map.put("one", 1.0);
+//        map.put("two", 2.2);
+//        bean.zadd(key, map);
+//        List<Double> result = bean.zmscore(key, members);
+//        System.out.println("-------------");
+//        System.out.println(result);
+//        System.out.println("-------------");
+//        Assert.assertNotNull(result);
+//        Reporter.log("|实际结果: " + result);
+//    }
+    @Test(description = "Param:|final String key, final String... members|</br>" +
+            "Case:|zpopmax命令|</br>" +
+            "Return:|删除并返回有序集合key中的最多count个具有最高得分的成员|",
+            dataProvider = "SortedSet_all",
+            dataProviderClass = com.tester.data.TestSortedSetData.class)
+    public void Test_zpopmax01(final String key) {
+        // 删除key
+        bean.del(key);
+        bean.zadd(key, 1.0, "one");
+        bean.zadd(key, 2.0, "two");
+        Tuple result = bean.zpopmax(key);
+        System.out.println("-------------");
+        System.out.println(result);
+        System.out.println("-------------");
+        Assert.assertNotNull(result);
+        Reporter.log("|实际结果: " + result);
+        // 删除key
+        bean.del(key);
+    }
+
+    @Test(description = "Param:|final String key, final String... members|</br>" +
+            "Case:|zpopmax命令|</br>" +
+            "Return:|删除并返回有序集合key中的最多count个具有最高得分的成员|",
+            dataProvider = "SortedSet_all",
+            dataProviderClass = com.tester.data.TestSortedSetData.class)
+    public void Test_zpopmax02(final String key, final int count) {
+        // 删除key
+        bean.del(key);
+        bean.zadd(key, 1.0, "one");
+        bean.zadd(key, 2.0, "two");
+        bean.zadd(key, 3.0, "three");
+        Set<Tuple> result = bean.zpopmax(key, count);
+        System.out.println("-------------");
+        System.out.println(result);
+        System.out.println("-------------");
+        Assert.assertNotNull(result);
+        Reporter.log("|实际结果: " + result);
+        // 删除key
+        bean.del(key);
+    }
+
+    @Test(description = "Param:|final String key|</br>" +
+            "Case:|zpopmin命令|</br>" +
+            "Return:|删除并返回有序集合key中的最多count个具有最低得分的成员|",
+            dataProvider = "SortedSet_all",
+            dataProviderClass = com.tester.data.TestSortedSetData.class)
+    public void Test_zpopmin01(final String key) {
+
+        bean.zadd(key, 1.0, "one");
+        bean.zadd(key, 2.0, "two");
+        bean.zadd(key, 3.0, "three");
+        Tuple result = bean.zpopmin(key);
+        System.out.println("-------------");
+        System.out.println(result);
+        System.out.println("-------------");
+        Assert.assertNotNull(result);
+        Reporter.log("|实际结果: " + result);
+        // 删除key
+        bean.del(key);
+    }
+
+    @Test(description = "Param:|final String key|</br>" +
+            "Case:|zpopmin命令|</br>" +
+            "Return:|删除并返回有序集合key中的最多count个具有最低得分的成员|",
+            dataProvider = "SortedSet_all",
+            dataProviderClass = com.tester.data.TestSortedSetData.class)
+    public void Test_zpopmin02(final String key, final int count) {
+
+        bean.zadd(key, 1.0, "one");
+        bean.zadd(key, 2.0, "two");
+        bean.zadd(key, 3.0, "three");
+        Set<Tuple> result = bean.zpopmin(key, count);
+        System.out.println("-------------");
+        System.out.println(result);
+        System.out.println("-------------");
+        Assert.assertNotNull(result);
+        Reporter.log("|实际结果: " + result);
+        // 删除key
+        bean.del(key);
+    }
+
+
 }

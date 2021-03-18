@@ -45,19 +45,11 @@ public class TestSortedSetData {
                     {"zincrbykey", 2000.0, "tom", 4000.00} // 测试数据 随机移除setkey中的一个元素
             };
         } else if (methodName.equals("Test_ZIncrBy2")) {
-            byte[] var = {20};
+            String var = "zincrByKey";
             byte[] var2 = {30};
             double var3 = 2200.0;
             return new Object[][]{
                     {var, var3, var2} // 测试数据 随机移除setkey中的一个元素
-            };
-        } else if (methodName.equals("Test_ZIncrBy3")) {
-            byte[] var = {30};
-            byte[] var2 = {40};
-            double var3 = 2300.00;
-            ZIncrByParams zIncrByParams = new ZIncrByParams();
-            return new Object[][]{
-                    {var, var3, var2, zIncrByParams} // 测试数据 随机移除setkey中的一个元素
             };
         } else if (methodName.equals("Test_ZRange")) {
             return new Object[][]{
@@ -212,8 +204,33 @@ public class TestSortedSetData {
             return new Object[][]{
                     {"ZrevrangeWithScoreskey", 0L, 1L}
             };
+        } else if (methodName.equals("Test_zmscore")) {
+             String[] member = {"one", "two"};
+            return new Object[][]{
+                    {"myset", member}
+            };
+        } else if (methodName.equals("Test_zpopmax01")) {
+
+            return new Object[][]{
+                    {"myset"}
+            };
+        } else if (methodName.equals("Test_zpopmax02")) {
+
+            return new Object[][]{
+                    {"myset", 2}
+            };
+        } else if (methodName.equals("Test_zpopmin01")) {
+
+            return new Object[][]{
+                    {"myset"}
+            };
+        } else if (methodName.equals("Test_zpopmin02")) {
+
+            return new Object[][]{
+                    {"myset", 2}
+            };
         } else {
-            return null;
+            return new Object[][]{{}};
         }
     }
 }

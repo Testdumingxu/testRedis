@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import redis.Gcache;
 import redis.clients.jedis.ListPosition;
+import redis.clients.jedis.params.LPosParams;
 
 import java.util.List;
 
@@ -231,5 +232,56 @@ public class RedisTestListCases {
         List<String> result = bean.brpop(time, key);
         Assert.assertNotNull(result);
         Reporter.log("实际结果: " + result);
+    }
+
+    @Test(description = "Param:|final String key, final String element|</br>" +
+            "Case:|lPos命令|</br>" +
+            "Return:|返回列表 key 中匹配给定 element 成员的索引|",
+            dataProvider = "List_all",
+            dataProviderClass = com.tester.data.TestListData.class)
+    public void Test_lPos01(final String key, final String element) {
+        String[] s = {"a","b", "c", "1", "2", "3", "c", "c"};
+        bean.rpush(key, s);
+        Long result = bean.lpos(key, element);
+        System.out.println("------------");
+        System.out.println(result);
+        System.out.println("------------");
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+        bean.del(key);
+    }
+
+    @Test(description = "Param:|final String key, final String element|</br>" +
+            "Case:|lPos命令|</br>" +
+            "Return:|返回列表 key 中匹配给定 element 成员的索引|",
+            dataProvider = "List_all",
+            dataProviderClass = com.tester.data.TestListData.class)
+    public void Test_lPos02(final String key, final String element) {
+        String[] s = {"a","b", "c", "1", "2", "3", "c", "c"};
+        bean.rpush(key, s);
+        Long result = bean.lpos(key, element, LPosParams.lPosParams().rank(2));
+        System.out.println("------------");
+        System.out.println(result);
+        System.out.println("------------");
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+        bean.del(key);
+    }
+
+    @Test(description = "Param:|final String key, final String element|</br>" +
+            "Case:|lPos命令|</br>" +
+            "Return:|返回列表 key 中匹配给定 element 成员的索引|",
+            dataProvider = "List_all",
+            dataProviderClass = com.tester.data.TestListData.class)
+    public void Test_lPos03(final String key, final String element) {
+        String[] s = {"a","b", "c", "1", "2", "3", "c", "c"};
+        bean.rpush(key, s);
+        List<Long> result = bean.lpos(key, element, LPosParams.lPosParams().rank(1), 2L);
+        System.out.println("------------");
+        System.out.println(result);
+        System.out.println("------------");
+        Assert.assertNotNull(result);
+        Reporter.log("实际结果: " + result);
+        bean.del(key);
     }
 }
